@@ -1,8 +1,13 @@
 ---
-title: YATAS
+title: Snappy Clean
 description: Yet Another Tailwind Alpine Starter Project for 11ty!
 layout: layouts/base.njk
+permalink: "/"
 ---
-<div class="flex items-center justify-center w-full min-h-screen" x-init="console.log('Hello from Alpine.js')">
-  <img src="img/logo.svg" class="w-1/3 h-auto max-w-full" width="220" height="150" alt="YATAS Logo" />
-</div>
+{% include 'components/home/hero.njk' %}
+{% include 'components/home/services.njk' %}
+{% include 'components/home/about.njk' %}
+{% include 'components/home/reviews.njk' %}
+{% include 'components/global/calculator.njk' %}
+{% include 'components/global/faq.njk' %}
+{% include 'components/global/cta.njk' %}
