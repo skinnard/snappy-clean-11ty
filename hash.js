@@ -2,8 +2,8 @@ const fs = require('fs');
 const md5 = require('md5');
 
 const assets = [
-  'css/style.css',
-  'js/scripts.js'
+  '/css/style.css',
+  '/js/scripts.js'
 ];
 
 const dataFile = '_data/hash.json';
@@ -14,18 +14,19 @@ let jsonValue = {};
 
 assets.forEach((asset) => {
   if (production) {
-    let file = '_site/' + asset;
+    let file = '_site' + asset;
     let fileHash = md5(fs.readFileSync(file)).substring(0, 15);
   
     let assetNameArray = asset.split('.');
     assetNameArray.splice(assetNameArray.length - 1, 0, fileHash);
     let hashedAsset = assetNameArray.join('.');
-
-    console.log('hashedAsset: ', hashedAsset);
   
     
-    fs.renameSync(file, '_site/' + hashedAsset);
+    fs.renameSync(file, '_site' + hashedAsset);
     jsonValue[asset] = hashedAsset;
+
+console.log('hashedAsset: ', hashedAsset);
+
   } else {
     jsonValue[asset] = asset;
   }
