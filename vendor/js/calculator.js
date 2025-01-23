@@ -63,7 +63,7 @@ function initializeCalculator() {
 
     if (areaSlider && areaValue) {
         areaSlider.addEventListener('input', () => {
-            areaValue.textContent = `${areaSlider.value}m²`;
+            areaValue.textContent = `${areaSlider.value}sqft`;
             updateTotalPrice();
         });
     }
@@ -132,7 +132,7 @@ function initializeCalculator() {
 
 // Запуск калькулятора після завантаження сторінки
 document.addEventListener('DOMContentLoaded', () => {
-    if (document.getElementById('total-price')) {
+if (document.getElementById('total-price')) {
         initializeCalculator();
     }
 });

@@ -1,4 +1,25 @@
 .star-title .mil-text-star {
-    top: -30px;
-    right: -50px;
+  top: -30px;
+  right: -50px;
+}
+
+#quote-form {
+  input {
+    background-color: white !important;
+
+    &::placeholder {
+      font-weight: bold;
+      color: black;
+    }
+
+    &:focus {
+      outline: 2px solid $a-2;
+      outline-offset: 2px;
+
+      &::placeholder {
+        font-weight: bold;
+        color: $m-2;
+      }
+    }
+  }
 }

@@ -1,0 +1,343 @@
+<!-- Form start -->
+<div>
+    <div class="container mil-p-0-f">
+        <div class="mil-section-title mil-mb-f mil-up">
+            <h2 class="mil-fs-36">Price Calculator</h2>
+            <div class="mil-dots"></div>
+            <b class="mil-fs-24">06</b>
+        </div>
+        <div class="mil-calculator">
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" action="/thank-you">
+                <div class="row mil-aic mil-jcb mil-mb-15">
+                    <fieldset class="col-6 mil-mb-15 mil-up">
+                        <div class="mil-input-frame">
+                            <input
+                                type="text"
+                                id="user-name-3"
+                                name="user-name"
+                                placeholder="Name"
+                                class="mil-br-md bg-white"
+                                autocomplete="name"
+                                required>
+                            <i class="far fa-user mil-a-2"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-6 mil-mb-15 mil-up">
+                        <div class="mil-input-frame">
+                            <input
+                                type="email"
+                                id="user-email-3"
+                                name="user-email"
+                                placeholder="Email"
+                                class="mil-br-md bg-white"
+                                autocomplete="email"
+                                required>
+                            <i class="far fa-at mil-a-2"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-6 mil-mb-15 mil-up">
+                        <div class="mil-input-frame">
+                            <input
+                                type="tel"
+                                id="user-phone-3"
+                                name="user-tel"
+                                class="mil-phone-input bg-white"
+                                placeholder="Phone"
+                                autocomplete="tel"
+                                required>
+                            <i class="far fa-mobile mil-a-2"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-6 mil-mb-15 mil-up">
+                        <div class="mil-input-frame">
+                            <input
+                                type="text"
+                                id="postal-code"
+                                name="postal-code"
+                                placeholder="Postal Code"
+                                class="mil-br-md !bg-white"
+                                autocomplete="postal-code"
+                                required>
+                            <i class="far fa-map-marker mil-a-2"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-12 col-md-6 mil-mb-15">
+                        <div class="mil-input-frame mil-custom-select mil-up">
+                            <div class="mil-select-button mil-br-md mil-bg-m-4">
+                                <span class="mil-selected-value mil-fs-18 mil-fw-600 mil-m-1">What service are you looking for?</span>
+                            </div>
+                            <div class="mil-select-dropdown mil-cleaning-type mil-br-md">
+                                <li>
+                                    <input type="radio" id="basic-cleaning" name="cleaning" value="basic-cleaning" checked="checked"/>
+                                    <label for="basic-cleaning">Standard Cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="deep-cleaning" name="cleaning" value="deep-cleaning"/>
+                                    <label for="deep-cleaning">Deep Cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="general-cleaning" name="cleaning" value="general-cleaning"/>
+                                    <label for="general-cleaning">Monthly cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="move-in-out" name="cleaning" value="move-in-out"/>
+                                    <label for="move-in-out">Move In/Out Cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="construction" name="cleaning" value="construction"/>
+                                    <label for="construction">Construction Cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="laundry" name="cleaning" value="laundry"/>
+                                    <label for="laundry">Laundry Cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="carpet" name="cleaning" value="carpet"/>
+                                    <label for="carpet">Carpet Cleaning</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="upholstery" name="cleaning" value="upholstery"/>
+                                    <label for="upholstery">Upholstery Cleaning</label>
+                                </li>
+                            </div>
+                            <i class="far fa-chevron-down mil-a-2"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-12 col-md-6 mil-mb-15">
+                        <div class="mil-input-frame mil-custom-select mil-up !z-50">
+                            <div class="mil-select-button mil-br-md mil-bg-m-4">
+                                <span class="mil-selected-value mil-fs-18 mil-fw-600 mil-m-1">What type of home do you have?</span>
+                            </div>
+                            <div class="mil-select-dropdown mil-cleaning-type mil-br-md">
+                                <li>
+                                    <input type="radio" id="bungalow" name="house-type" value="bungalow" checked="checked"/>
+                                    <label for="bungalow">Bungalow</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="townhouse" name="house-type" value="townhouse"/>
+                                    <label for="townhouse">Townhouse/Row/Villa</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="apartment" name="house-type" value="apartment"/>
+                                    <label for="apartment">Apartment</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="two-storey" name="house-type" value="two-storey"/>
+                                    <label for="two-storey">Two-storey</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="bi-level" name="house-type" value="bi-level"/>
+                                    <label for="bi-level">Bi-level</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="4-level-split" name="house-type" value="4-level-split"/>
+                                    <label for="4-level-split">4-level Split</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="infill" name="house-type" value="infill"/>
+                                    <label for="infill">Infill</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="acreage" name="house-type" value="acreage"/>
+                                    <label for="acreage">Acreage (detached home on large lot)</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="duplex" name="house-type" value="duplex"/>
+                                    <label for="duplex">Duplex</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="mobile" name="house-type" value="mobile"/>
+                                    <label for="mobile">Mobile</label>
+                                </li>
+                            </div>
+                            <i class="far fa-chevron-down mil-a-2"></i>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-12 col-md-6">
+                        <div class="mil-calc-panel mil-br-md mil-mb-15 mil-up">
+                            <div class="mil-area-slider mil-aic mil-mb-30">
+                                <label for="area" class="mil-m-1 mil-fw-600 mil-mr-30 mil-fs-18">Area (sqft):</label>
+                                <div class="mil-custom-range-slider">
+                                    <input type="range" id="area" name="area" min="300" max="10000" value="1500"/>
+                                    <div class="range-track">
+                                        <div class="range-fill"></div>
+                                    </div>
+                                    <div class="range-thumb"></div>
+                                </div>
+                                <span id="area-value" class="mil-value mil-m-1 mil-fw-600 mil-fs-18 ml-6">10,000sqft</span>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="col-12 col-md-6">
+                        <div class="mil-calc-panel mil-br-md mil-mb-15 mil-up">
+                            <div class="mil-aic mil-mb-30">
+                                <label for="preferred-date" class="mil-m-1 mil-fw-600 mil-mr-30 mil-fs-18">Preferred date</label>
+                                <input type="date" id="preferred-date" min="2015-01-01T00:00" max="2025-12-31T23:59" step="1">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="mil-additional-services mil-mb-15">
+                        <div class="grid grid-cols-3 gap-6">
+                            <fieldset class="mil-up">
+                                <div class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600 items-center mil-br-md">
+                                    <div class="w-3/4">
+                                        <span class="mil-service-name mil-fs-18 !pr-0">Have you tried our services before?</span>
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex">
+                                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                                <input type="radio" id="yes" name="repeat-customer" value="yes" class="mil-additional-service min-w-5 mr-3"/>
+                                                <span class="mil-radio-checkmark"></span>
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="flex">
+                                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                                <input type="radio" id="no" name="repeat-customer" value="no" class="mil-additional-service min-w-5 mr-3"/>
+                                                <span class="mil-radio-checkmark"></span>
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="mil-up">
+                                <div class="mil-service mil-custom-checkbox mil-m-1 mil-fw-600 items-center mil-br-md">
+                                    <div class="w-3/4">
+                                        <span class="mil-service-name mil-fs-18 !pr-0">Have you used professional cleaning services before?</span>
+                                    </div>
+                                    <div class="flex flex-col gap-3">
+                                        <div class="flex">
+                                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                                <input type="radio" id="yes" name="repeat-customer" value="yes" class="mil-additional-service min-w-5 mr-3"/>
+                                                <span class="mil-radio-checkmark"></span>
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="flex">
+                                            <label class="mil-custom-radio mil-mr-30 mil-fs-18">
+                                                <input type="radio" id="no" name="repeat-customer" value="no" class="mil-additional-service min-w-5 mr-3"/>
+                                                <span class="mil-radio-checkmark"></span>
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="w-ful h-full">
+                                <div class="mil-input-frame mil-custom-select mil-up !h-full">
+                                    <div class="mil-select-button mil-br-md mil-bg-m-4 !h-full">
+                                        <span class="mil-selected-value mil-fs-18 mil-fw-600 mil-m-1">Where did you hear about us?</span>
+                                    </div>
+                                    <div class="mil-select-dropdown mil-cleaning-type mil-br-md">
+                                        <li>
+                                            <input type="radio" id="facebook" name="referral" value="90" checked="checked"/>
+                                            <label for="facebook">Facebook</label>
+                                        </li>
+                                        <li>
+                                            <input
+                                                type="radio"
+                                                id="google"
+                                                name="referral"
+                                                value="120"
+                                                data-apartment="120"
+                                                data-house="150"
+                                                data-office="180"
+                                                data-industrial="200"/>
+                                            <label for="google">Google</label>
+                                        </li>
+                                        <li>
+                                            <input
+                                                type="radio"
+                                                id="apartment"
+                                                name="referral"
+                                                value="120"
+                                                data-apartment="120"
+                                                data-house="150"
+                                                data-office="180"
+                                                data-industrial="200"/>
+                                            <label for="apartment">Apartment</label>
+                                        </li>
+                                        <li>
+                                            <input
+                                                type="radio"
+                                                id="two-storey"
+                                                name="referral"
+                                                value="150"
+                                                data-apartment="150"
+                                                data-house="180"
+                                                data-office="210"
+                                                data-industrial="240"/>
+                                            <label for="two-storey">Two-storey</label>
+                                        </li>
+                                        <li>
+                                            <input
+                                                type="radio"
+                                                id="bi-level"
+                                                name="referral"
+                                                value="150"
+                                                data-apartment="150"
+                                                data-house="180"
+                                                data-office="210"
+                                                data-industrial="240"/>
+                                            <label for="bi-level">Bi-level</label>
+                                        </li>
+                                        <li>
+                                            <div class="mil-input-frame">
+                                                <input
+                                                    type="text"
+                                                    id="user-name-3"
+                                                    name="referral"
+                                                    placeholder="Other"
+                                                    class="mil-br-md mil-bg-m-3 !bg-white hidden"
+                                                    autocomplete="name"/>
+                                            </div>
+                                        </li>
+                                    </div>
+                                    <i class="far fa-chevron-down mil-a-2"></i>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <div class="mil-additional-services">
+                        <fieldset class="mil-mb-15 mil-up">
+                            <div class="mil-input-frame flex items-start justify-start">
+                                <textarea
+                                    class="text-left mil-fs-18 text-[#323842] font-semibold mil-br-md"
+                                    id="story"
+                                    name="story"
+                                    rows="5"
+                                    cols="33"
+                                    placeholder="Additional information"></textarea>
+                                <i class="far fa-user mil-a-2"></i>
+                            </div>
+                        </fieldset>
+                        <fieldset class="mil-mb-15 mil-up">
+                            <div class="mil-input-frame">
+                                <input
+                                    type="text"
+                                    id="promo-code"
+                                    name="promo-code"
+                                    placeholder="Promo Code"
+                                    class="mil-br-md bg-white"
+                                    autocomplete="name"
+                                    required>
+                                <i class="far fa-user mil-a-2"></i>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <div class="mil-total-price mil-br-md mil-up !pl-[6px]">
+                        <div class="row mil-jcb mil-aic">
+                            <div class="col-12 mil-jcs mil-sm-jcs mil-mb-30">
+                                <div class="mil-tp-frame">
+                                    <button type="submit" class="mil-btn mil-br-xl mil-bg-a-2 mil-m-4 mil-hover-bri-110 mil-icon-btn">Submit<i class="far fa-broom mil-bg-m-4 mil-a-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- form end -->
