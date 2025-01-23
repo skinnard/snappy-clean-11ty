@@ -1,3 +1,4 @@
+@use "sass:color";
 /* -------------------------------------------
 
 fonts
@@ -39,10 +40,10 @@ colors
 ------------------------------------------- */
 
 $m-1: #323842;
-$m-2: lighten($m-1, 36%);
-$m-3: lighten($m-1, 73%);
+$m-2: color.adjust($m-1, $lightness: 36%);
+$m-3: color.adjust($m-1, $lightness: 73%);
 $m-4: #fff;
-$m-5: darken($m-1, 12%);
+$m-5: color.adjust($m-1, $lightness: -12%);
 
 $a-1: #EDCE29;
 $a-2: #5A8CF5;

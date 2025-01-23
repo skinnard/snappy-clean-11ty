@@ -1,3 +1,5 @@
+@use "variables";
+
 /* -------------------------------------------
 
 preloader
@@ -15,10 +17,10 @@ preloader
   align-items: center;
   justify-content: center;
   padding: 10rem;
-  background-color: rgba($m-4, 0.1);
+  background-color: rgba(variables.$m-4, 0.1);
   backdrop-filter: blur(20rem);
   animation: blur 4s ease-in-out;
-  transition: $t-lg;
+  transition: variables.$t-lg;
   transition-delay: 0.4s;
 
   @media (max-width: 768px) {
@@ -28,12 +30,12 @@ preloader
   & .mil-preloader-content {
     width: 100%;
     max-width: 60rem;
-    transition: $t-md;
+    transition: variables.$t-md;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $m-4;
+    background-color: variables.$m-4;
     border-radius: 10rem;
     padding: 3rem;
     transform: scale(1) translateY(-3rem);
@@ -58,7 +60,7 @@ preloader
     & .mil-preloader {
       width: 100%;
       height: 0.5rem;
-      background-color: $m-3;
+      background-color: variables.$m-3;
       position: relative;
       border-radius: 0.5rem;
       overflow: hidden;
@@ -70,8 +72,8 @@ preloader
         display: block;
         width: 0%;
         height: 100%;
-        background-color: $a-2;
-        transition: $t-md;
+        background-color: variables.$a-2;
+        transition: variables.$t-md;
       }
     }
   }
@@ -107,11 +109,11 @@ top panel
   width: auto;
   display: flex;
   align-items: center;
-  transition: $t-sm;
+  transition: variables.$t-sm;
 
   & img {
     width: 100%;
-    transition: $t-md;
+    transition: variables.$t-md;
   }
 }
 
@@ -120,10 +122,10 @@ top panel
   z-index: 999;
   top: 0;
   width: 100%;
-  height: $space + 5rem;
-  border-bottom: solid 0.1rem rgba($m-4, 0);
+  height: variables.$space + 5rem;
+  border-bottom: solid 0.1rem rgba(variables.$m-4, 0);
   width: 100%;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .container {
     height: 100%;
@@ -148,11 +150,11 @@ top panel
       width: auto;
       display: flex;
       align-items: center;
-      transition: $t-sm;
+      transition: variables.$t-sm;
 
       & img {
         width: 100%;
-        transition: $t-md;
+        transition: variables.$t-md;
 
         &.mil-light {
           opacity: 0;
@@ -162,18 +164,18 @@ top panel
     }
 
     & .mil-tp-phone a {
-      color: $m-1;
+      color: variables.$m-1;
       font-size: 2rem;
-      transition: $t-sm;
+      transition: variables.$t-sm;
     }
   }
 
   &.mil-scroll {
-    height: $space;
-    background-color: rgba($m-4, 0.8);
-    border-color: rgba($m-4, 0.1);
+    height: variables.$space;
+    background-color: rgba(variables.$m-4, 0.8);
+    border-color: rgba(variables.$m-4, 0.1);
     backdrop-filter: blur(4rem);
-    box-shadow: $shadow;
+    box-shadow: variables.$shadow;
 
     & .mil-tp-content {
       & .mil-logo {
@@ -183,20 +185,20 @@ top panel
   }
 
   @media (max-width: 992px) {
-    height: $space !important;
-    background-color: $m-4;
-    border-bottom: solid 0.1rem rgba($m-2, 0.2);
+    height: variables.$space !important;
+    background-color: variables.$m-4;
+    border-bottom: solid 0.1rem rgba(variables.$m-2, 0.2);
 
     &.mil-scroll {
-      background-color: $m-4;
-      border-bottom: solid 0.1rem rgba($m-2, 0.2);
+      background-color: variables.$m-4;
+      border-bottom: solid 0.1rem rgba(variables.$m-2, 0.2);
     }
   }
 
   @media (max-width: 768px) {
     & .mil-tp-content {
       & .mil-tp-phone a {
-        color: $m-1;
+        color: variables.$m-1;
         font-size: 1.6rem;
       }
     }
@@ -216,11 +218,11 @@ top panel
     }
 
     & .mil-tp-phone a {
-      color: $m-3;
+      color: variables.$m-3;
     }
 
     &.mil-scroll {
-      background-color: rgba($m-4, 0.9);
+      background-color: rgba(variables.$m-4, 0.9);
 
       & .mil-logo {
         & img {
@@ -233,12 +235,12 @@ top panel
       }
 
       & .mil-tp-phone a {
-        color: $m-1;
+        color: variables.$m-1;
       }
     }
 
     @media (max-width: 992px) {
-      background-color: $m-4;
+      background-color: variables.$m-4;
 
       & .mil-logo {
         & img {
@@ -251,11 +253,11 @@ top panel
       }
 
       & .mil-tp-phone a {
-        color: $m-1;
+        color: variables.$m-1;
       }
 
       &.mil-scroll {
-        background-color: $m-4;
+        background-color: variables.$m-4;
       }
     }
   }
@@ -290,7 +292,7 @@ main menu
         content: "\f111";
         margin-right: 1rem;
         font-size: 1rem;
-        color: $a-2;
+        color: variables.$a-2;
         position: absolute;
         transform: scale(0);
         top: 46.5%;
@@ -305,9 +307,9 @@ main menu
           padding-top: 0.2rem;
           margin-left: 1rem;
           font-size: 1rem;
-          color: $m-2;
+          color: variables.$m-2;
           transform: rotate(-90deg);
-          transition: $t-sm;
+          transition: variables.$t-sm;
         }
       }
 
@@ -320,30 +322,30 @@ main menu
         display: flex;
         align-items: center;
         height: 100%;
-        color: $m-1;
+        color: variables.$m-1;
         line-height: 100%;
         padding-left: 2rem;
-        transition: $t-sm;
+        transition: variables.$t-sm;
       }
 
       &.mil-current {
         position: relative;
-        transition: $t-sm;
+        transition: variables.$t-sm;
       }
 
       & ul {
-        border-radius: $angle;
+        border-radius: variables.$angle;
         height: auto;
         padding: 1.5rem;
         min-width: 20rem;
-        background-color: $a-2;
+        background-color: variables.$a-2;
         position: absolute;
         transform: translateY(-0.7rem) scale(0.9);
         pointer-events: none;
         top: 80%;
         left: -3rem;
         opacity: 0;
-        transition: $t-sm;
+        transition: variables.$t-sm;
 
         & li {
           width: 100%;
@@ -355,13 +357,13 @@ main menu
           & a {
             width: 100%;
             display: block;
-            color: $m-4;
-            border-radius: calc($angle - 0.5rem);
+            color: variables.$m-4;
+            border-radius: calc(variables.$angle - 0.5rem);
             padding: 1.5rem 1.5rem;
-            transition: $t-sm;
+            transition: variables.$t-sm;
 
             &:hover {
-              background-color: rgba($m-4, 0.1);
+              background-color: rgba(variables.$m-4, 0.1);
             }
           }
         }
@@ -390,26 +392,26 @@ main menu
 
         & ul {
           top: 100%;
-          border-radius: 0 0 $angle $angle;
+          border-radius: 0 0 variables.$angle variables.$angle;
         }
       }
     }
   }
 
   @media (max-width: 992px) {
-    box-shadow: $shadow;
-    border-radius: 0 0 $angle $angle;
+    box-shadow: variables.$shadow;
+    border-radius: 0 0 variables.$angle variables.$angle;
     height: auto;
     position: absolute;
     top: calc(100% + 0.1rem);
     left: 0;
-    background-color: $m-4;
+    background-color: variables.$m-4;
     padding: 3rem 3rem 6rem;
     width: 100%;
     opacity: 0;
     pointer-events: none;
     transform: translateY(-0.9rem) scale(0.9);
-    transition: $t-sm;
+    transition: variables.$t-sm;
 
     &.mil-active {
       pointer-events: all;
@@ -467,16 +469,16 @@ main menu
             &:after {
               content: "(Current)";
               margin-left: 1rem;
-              color: rgba($m-2, 0.6);
+              color: rgba(variables.$m-2, 0.6);
               margin-right: 0;
             }
           }
         }
 
         & ul {
-          border-radius: $angle - 0.5rem !important;
-          background-color: $m-3;
-          border: solid 0.1rem rgba($m-2, 0.2);
+          border-radius: variables.$angle - 0.5rem !important;
+          background-color: variables.$m-3;
+          border: solid 0.1rem rgba(variables.$m-2, 0.2);
           width: 100%;
           padding: 0;
           padding: 0;
@@ -487,16 +489,16 @@ main menu
           flex-direction: column;
           align-items: center;
           transform: none;
-          transition: $t-md;
+          transition: variables.$t-md;
           transition-delay: 0.2s;
 
           & li {
             opacity: 0;
-            transition: $t-md;
+            transition: variables.$t-md;
             transition-delay: 0s;
 
             & a {
-              color: $m-1;
+              color: variables.$m-1;
               margin: 1.5rem 0;
               text-align: center;
             }
@@ -533,11 +535,11 @@ main menu
       & ul {
         & li {
           & a {
-            color: $m-4;
+            color: variables.$m-4;
           }
 
           & ul li a {
-            color: $m-4;
+            color: variables.$m-4;
           }
         }
       }
@@ -546,11 +548,11 @@ main menu
         & ul {
           & li {
             & a {
-              color: $m-1;
+              color: variables.$m-1;
             }
 
             & ul li a {
-              color: $m-4;
+              color: variables.$m-4;
             }
           }
         }
@@ -560,11 +562,11 @@ main menu
         & ul {
           & li {
             & a {
-              color: $m-1;
+              color: variables.$m-1;
             }
 
             & ul li a {
-              color: $m-1;
+              color: variables.$m-1;
             }
           }
         }
@@ -573,11 +575,11 @@ main menu
           & ul {
             & li {
               & a {
-                color: $m-1;
+                color: variables.$m-1;
               }
 
               & ul li a {
-                color: $m-1;
+                color: variables.$m-1;
               }
             }
           }
@@ -597,15 +599,15 @@ munu button
   margin-left: 3rem;
   padding: 2.2rem 1.2rem 2.2rem;
   border-radius: 50%;
-  background-color: $m-3;
+  background-color: variables.$m-3;
   height: 2.2px;
   cursor: pointer;
   justify-content: center;
   align-items: center;
   display: none;
-  border: solid 0.1rem rgba($m-2, 0.2);
+  border: solid 0.1rem rgba(variables.$m-2, 0.2);
   transform: scale(1.1);
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & span,
   & span:after,
@@ -616,7 +618,7 @@ munu button
     border-radius: 0.1rem;
     width: 2.2rem;
     height: 2px;
-    background-color: $m-1;
+    background-color: variables.$m-1;
     backface-visibility: hidden;
     transition: inherit;
   }
@@ -684,14 +686,14 @@ forms
   }
 
   &.mil-bg-m-4 {
-    background-color: rgba($m-4, 0.9);
-    border: solid 0.1rem rgba($m-4, 1);
+    background-color: rgba(variables.$m-4, 0.9);
+    border: solid 0.1rem rgba(variables.$m-4, 1);
     backdrop-filter: blur(5rem);
   }
 
   &.mil-bg-m-5 {
-    background-color: rgba($m-5, 0.6);
-    border: solid 0.1rem rgba($m-3, 0.05);
+    background-color: rgba(variables.$m-5, 0.6);
+    border: solid 0.1rem rgba(variables.$m-3, 0.05);
   }
 
   @media (max-width: 992px) {
@@ -716,9 +718,9 @@ forms
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: $font-1;
-    border: solid 0.1rem rgba($m-2, 0.3);
-    transition: $t-sm;
+    font-family: variables.$font-1;
+    border: solid 0.1rem rgba(variables.$m-2, 0.3);
+    transition: variables.$t-sm;
 
     & .mil-selected-value {
       opacity: 0.6;
@@ -735,7 +737,8 @@ forms
 
     &:hover,
     &:focus {
-      outline: inherit;
+      outline: 1px solid #5a8cf5;
+      outline-offset: 2px;
     }
 
     &:focus + i {
@@ -749,21 +752,22 @@ forms
     width: 100%;
     padding: 2.5rem 3rem;
     font-size: 1.8rem;
-    font-family: $font-1;
-    border: solid 0.1rem rgba($m-2, 0.2);
-    transition: $t-sm;
-    color: $m-2;
+    font-family: variables.$font-1;
+    border: solid 0.1rem rgba(variables.$m-2, 0.2);
+    transition: variables.$t-sm;
+    color: variables.$m-2;
     font-weight: 400;
 
     &::placeholder {
-      color: $m-1;
+      color: variables.$m-1;
       font-size: 1.8rem;
       font-weight: 600;
     }
 
     &:hover,
     &:focus {
-      outline: inherit;
+      outline: 1px solid #5a8cf5;
+      outline-offset: 2px;
     }
 
     &:focus + i {
@@ -774,7 +778,7 @@ forms
 
   &.mil-custom-select i {
     transform: rotate(-90deg);
-    transition: $t-sm;
+    transition: variables.$t-sm;
   }
 
   & i {
@@ -791,7 +795,7 @@ forms
     height: 6.8rem;
     width: 6.8rem;
     pointer-events: none;
-    transition: $t-sm;
+    transition: variables.$t-sm;
   }
 
   & .mil-select-dropdown {
@@ -800,44 +804,44 @@ forms
     z-index: 999;
     list-style: none;
     width: 100%;
-    background-color: $a-2;
+    background-color: variables.$a-2;
     padding: 1.5rem;
     transform: translateY(-0.7rem) scale(0.9);
     opacity: 0;
     visibility: hidden;
-    transition: $t-sm;
+    transition: variables.$t-sm;
 
     & li {
       position: relative;
       cursor: pointer;
       display: flex;
       align-items: center;
-      border-radius: calc($angle - 0.5rem);
-      transition: $t-sm;
+      border-radius: calc(variables.$angle - 0.5rem);
+      transition: variables.$t-sm;
 
       & label {
         line-height: 100%;
-        color: $m-4;
+        color: variables.$m-4;
         width: 100%;
         cursor: pointer;
         display: flex;
         align-items: center;
-        border-radius: calc($angle - 0.5rem);
+        border-radius: calc(variables.$angle - 0.5rem);
         padding: 1.5rem 1.5rem;
-        transition: $t-sm;
+        transition: variables.$t-sm;
 
         &:hover {
-          background-color: rgba($m-4, 0.1);
+          background-color: rgba(variables.$m-4, 0.1);
         }
       }
 
       &:hover,
       & input:checked ~ label {
-        background-color: rgba($m-4, 0.1);
+        background-color: rgba(variables.$m-4, 0.1);
       }
 
       & input:focus ~ label {
-        background-color: $m-2;
+        background-color: variables.$m-2;
       }
 
       & input[type="radio"] {
@@ -878,8 +882,8 @@ services
 .mil-service-card {
   padding: 4rem;
   display: block;
-  transition: $t-md;
-  border: solid 0.1rem rgba($m-2, 0.3);
+  transition: variables.$t-md;
+  border: solid 0.1rem rgba(variables.$m-2, 0.3);
 
   & .mil-card-icon {
     width: 60px;
@@ -889,7 +893,7 @@ services
     transform: scale(1.01);
 
     & .mil-btn {
-      background-color: $a-1 !important;
+      background-color: variables.$a-1 !important;
     }
   }
 }
@@ -899,7 +903,7 @@ services
     width: 100%;
     height: 100%;
     min-height: 30rem;
-    border-radius: $angle;
+    border-radius: variables.$angle;
     position: relative;
     overflow: hidden;
 
@@ -953,7 +957,7 @@ about
 
   & .mil-bg-number {
     opacity: 0.1;
-    color: $m-4;
+    color: variables.$m-4;
     position: absolute;
     font-size: 30rem;
     font-weight: 900;
@@ -980,7 +984,7 @@ about
 
 .mil-intr-star {
   margin-top: 12rem;
-  background-color: $m-4;
+  background-color: variables.$m-4;
   position: relative;
   padding: 2rem 5rem;
   border-radius: 6rem;
@@ -1048,7 +1052,7 @@ reviews
     justify-content: center;
     background-color: transparent;
     margin: 0 !important;
-    transition: $t-md !important;
+    transition: variables.$t-md !important;
 
     & .mil-custom-dot {
       background-color: red;
@@ -1057,7 +1061,7 @@ reviews
       border-radius: 50%;
       background-size: cover;
       background-position: top;
-      transition: $t-md !important;
+      transition: variables.$t-md !important;
 
       &.mil-slide-1 {
         background-image: url(../img/users/1.jpg);
@@ -1108,11 +1112,11 @@ reviews
   & .mil-slider-arrow {
     width: 4rem;
     height: 4rem;
-    background-color: $a-2;
-    color: $m-4;
+    background-color: variables.$a-2;
+    color: variables.$m-4;
     border-radius: 50%;
     cursor: pointer;
-    transition: $t-md;
+    transition: variables.$t-md;
     font-size: 2rem;
     display: flex;
     align-items: center;
@@ -1124,8 +1128,8 @@ reviews
     }
 
     &.swiper-button-disabled {
-      background-color: $m-2;
-      color: $m-4;
+      background-color: variables.$m-2;
+      color: variables.$m-4;
       opacity: 0.2;
       cursor: not-allowed;
     }
@@ -1161,19 +1165,19 @@ accordion (faq)
 
 .mil-accordion {
   text-align: left;
-  background-color: $m-4;
+  background-color: variables.$m-4;
   width: 100%;
   border: none;
   outline: none;
   cursor: pointer;
   padding: 3rem;
-  border-radius: $angle;
+  border-radius: variables.$angle;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: background-color 0.3s ease;
-  color: $m-1;
-  transition: $t-md;
+  color: variables.$m-1;
+  transition: variables.$t-md;
 
   &:hover {
     transform: scale(1.01);
@@ -1185,16 +1189,16 @@ accordion (faq)
     font-size: 2rem;
     transition: transform 0.3s ease;
     margin-top: -0.2rem;
-    transition: $t-md;
+    transition: variables.$t-md;
   }
 
   &.mil-active {
     margin-bottom: 1.5rem;
-    background-color: $m-4;
+    background-color: variables.$m-4;
 
     & .mil-icon {
       border-color: transparent;
-      background-color: $a-1;
+      background-color: variables.$a-1;
       transform: rotate(180deg);
       margin-top: 0.2rem;
     }
@@ -1202,14 +1206,14 @@ accordion (faq)
 }
 
 .mil-panel {
-  background-color: $a-2;
+  background-color: variables.$a-2;
   max-height: 0;
   overflow: hidden;
-  border-radius: $angle;
-  transition: max-height $t-md;
+  border-radius: variables.$angle;
+  transition: max-height variables.$t-md;
 
   & p {
-    color: $m-4;
+    color: variables.$m-4;
     padding: 3rem;
     margin: 0;
   }
@@ -1222,18 +1226,18 @@ blog
 ------------------------------------------- */
 
 .mil-blog-card {
-  background-color: $m-4;
+  background-color: variables.$m-4;
   display: flex;
   flex-direction: column;
-  border-radius: $angle;
+  border-radius: variables.$angle;
   overflow: hidden;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .mil-cover {
     overflow: hidden;
     position: relative;
     padding-bottom: 65%;
-    border-radius: $angle $angle 0 0;
+    border-radius: variables.$angle variables.$angle 0 0;
 
     & img {
       width: 100%;
@@ -1244,7 +1248,7 @@ blog
       object-fit: cover;
       object-position: center;
       transform: scale(1.05);
-      transition: $t-md;
+      transition: variables.$t-md;
     }
 
     & .mil-category {
@@ -1260,9 +1264,9 @@ blog
 
     & .mil-date {
       display: inline-block;
-      background-color: $m-3;
+      background-color: variables.$m-3;
       padding: 0.4rem 1rem;
-      color: $m-2;
+      color: variables.$m-2;
       border-radius: 2rem;
     }
 
@@ -1283,7 +1287,7 @@ blog
     & .mil-cover {
       width: 50%;
       padding-bottom: 0;
-      border-radius: $angle 0 0 $angle;
+      border-radius: variables.$angle 0 0 variables.$angle;
     }
 
     & .mil-descr {
@@ -1296,7 +1300,7 @@ blog
       & .mil-cover {
         width: 100%;
         padding-bottom: 65%;
-        border-radius: $angle $angle 0 0;
+        border-radius: variables.$angle variables.$angle 0 0;
       }
 
       & .mil-descr {
@@ -1316,7 +1320,7 @@ blog
 
     & .mil-descr {
       & .mil-btn {
-        background-color: $a-1 !important;
+        background-color: variables.$a-1 !important;
       }
     }
   }
@@ -1334,8 +1338,8 @@ blog
 .mil-sidebar-card {
   padding: 4rem;
   padding-bottom: 1rem;
-  background-color: $m-4;
-  border-radius: $angle;
+  background-color: variables.$m-4;
+  border-radius: variables.$angle;
 }
 
 .mil-categories {
@@ -1344,12 +1348,12 @@ blog
 
     & a {
       font-size: 2rem;
-      color: $m-1;
+      color: variables.$m-1;
       font-weight: 600;
-      transition: $t-sm;
+      transition: variables.$t-sm;
 
       &:hover {
-        color: $a-2;
+        color: variables.$a-2;
         padding-left: 1rem;
       }
     }
@@ -1359,7 +1363,7 @@ blog
 .mil-port-cover {
   position: relative;
   overflow: hidden;
-  border-radius: $angle;
+  border-radius: variables.$angle;
   padding-bottom: 50%;
   width: 100%;
 
@@ -1377,8 +1381,8 @@ blog
 .mil-publication {
   padding: 6rem;
   padding-bottom: 4.5rem;
-  background-color: $m-4;
-  border-radius: $angle;
+  background-color: variables.$m-4;
+  border-radius: variables.$angle;
 }
 
 /* -------------------------------------------
@@ -1396,15 +1400,15 @@ right side buttons
   bottom: 7rem;
   right: 4.4%;
   z-index: 999;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   &.mil-on-bottom {
-    bottom: $space * 2 - 6rem;
+    bottom: variables.$space * 2 - 6rem;
   }
 
   & .mil-right-buttons {
     padding: 1.5rem;
-    background-color: rgba($m-5, 0.15);
+    background-color: rgba(variables.$m-5, 0.15);
     border-radius: 9rem;
     display: flex;
     flex-direction: column;
@@ -1415,21 +1419,21 @@ right side buttons
       width: 6rem;
       height: 6rem;
       border-radius: 50%;
-      background-color: $m-1;
+      background-color: variables.$m-1;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 2rem;
-      color: $m-4;
+      color: variables.$m-4;
       border: none;
       cursor: pointer;
-      transition: $t-md;
+      transition: variables.$t-md;
 
       &.mil-back-to-top {
         opacity: 0;
         width: 0;
         height: 0;
-        transition: $t-sm;
+        transition: variables.$t-sm;
 
         &.mil-active {
           width: 6rem;
@@ -1444,7 +1448,7 @@ right side buttons
           font-family: "Font Awesome 5 Pro";
           font-weight: 400;
           content: "\f095";
-          color: $a-1;
+          color: variables.$a-1;
           animation: phone-move 4s ease-in-out infinite;
         }
 
@@ -1463,17 +1467,17 @@ right side buttons
   & .mil-order-call-window {
     position: relative;
     width: 70rem;
-    background-color: $m-4;
+    background-color: variables.$m-4;
     backdrop-filter: blur(3rem);
     margin-right: 15px;
-    border-radius: $angle;
-    border-bottom: solid 0.1rem rgba($m-4, 1);
-    box-shadow: 0 0.3rem 1rem rgba($m-5, 0.08);
+    border-radius: variables.$angle;
+    border-bottom: solid 0.1rem rgba(variables.$m-4, 1);
+    box-shadow: 0 0.3rem 1rem rgba(variables.$m-5, 0.08);
     opacity: 0;
     transform: scale(0.9);
     padding: 1.5rem;
     pointer-events: none;
-    transition: $t-md;
+    transition: variables.$t-md;
 
     &.mil-active {
       pointer-events: all;
@@ -1500,7 +1504,7 @@ right side buttons
       height: 0;
       border-left: 1.8rem solid transparent;
       border-right: 1.8rem solid transparent;
-      border-bottom: 1.8rem solid $m-4;
+      border-bottom: 1.8rem solid variables.$m-4;
       /* Колір трикутника */
       position: absolute;
       bottom: 3.8rem;
@@ -1515,7 +1519,7 @@ right side buttons
     width: 100%;
 
     &.mil-on-bottom {
-      bottom: $space * 3;
+      bottom: variables.$space * 3;
     }
 
     & .mil-order-call-window {
@@ -1585,7 +1589,7 @@ discount popup
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba($m-2, 0.1);
+  background-color: rgba(variables.$m-2, 0.1);
   backdrop-filter: blur(5rem);
   display: flex;
   align-items: center;
@@ -1593,7 +1597,7 @@ discount popup
   padding: 1.5rem;
   opacity: 0;
   pointer-events: none;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .mil-popup-window {
     width: 100%;
@@ -1601,7 +1605,7 @@ discount popup
     position: relative;
     transform: scale(0.8) translateY(6rem);
     opacity: 0;
-    transition: $t-md;
+    transition: variables.$t-md;
     transition-delay: 0;
 
     & .mil-envelope-top {
@@ -1618,14 +1622,14 @@ discount popup
         position: absolute;
         z-index: 9;
         bottom: 9rem;
-        color: $m-4;
+        color: variables.$m-4;
         font-size: 2rem;
         right: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
-        transition: $t-sm;
+        transition: variables.$t-sm;
 
         &:hover {
           transform: rotate(90deg);
@@ -1650,7 +1654,7 @@ discount popup
       position: relative;
       padding: 6rem;
       width: 100%;
-      background-color: $m-4;
+      background-color: variables.$m-4;
       border-top-left-radius: 0;
       border-top-right-radius: 0;
     }
@@ -1697,7 +1701,7 @@ discount popup
       }
 
       & .mil-envelope-body {
-        border-radius: $angle;
+        border-radius: variables.$angle;
         padding: 6rem 3rem 3rem;
       }
 
@@ -1738,19 +1742,19 @@ range slider
       -webkit-appearance: none;
       width: 100%;
       height: 0.4rem;
-      background: $m-3;
+      background: variables.$m-3;
       outline: none;
       transform: scale(1);
       transition: opacity 0.2s;
 
       &::-moz-range-track {
-        background-color: rgba($m-2, 0.2);
+        background-color: rgba(variables.$m-2, 0.2);
         height: 0.4rem;
         border-radius: 1rem;
       }
 
       &::-webkit-slider-runnable-track {
-        background-color: rgba($m-2, 0.2);
+        background-color: rgba(variables.$m-2, 0.2);
         height: 0.4rem;
         border-radius: 1rem;
       }
@@ -1760,12 +1764,12 @@ range slider
         appearance: none;
         width: 2rem;
         height: 2rem;
-        background-color: $a-2;
+        background-color: variables.$a-2;
         border-radius: 50%;
         margin-top: -0.8rem;
         cursor: pointer;
-        box-shadow: 0 0 0 0 $a-2;
-        transition: $t-sm;
+        box-shadow: 0 0 0 0 variables.$a-2;
+        transition: variables.$t-sm;
       }
 
       &::-moz-range-thumb {
@@ -1773,20 +1777,20 @@ range slider
         appearance: none;
         width: 2rem;
         height: 2rem;
-        background-color: $a-2;
+        background-color: variables.$a-2;
         border-radius: 50%;
         margin-top: -0.8rem;
         cursor: pointer;
-        box-shadow: 0 0 0 0 $a-2;
-        transition: $t-sm;
+        box-shadow: 0 0 0 0 variables.$a-2;
+        transition: variables.$t-sm;
       }
 
       &::-webkit-slider-thumb:hover {
-        box-shadow: 0 0 0 0.3rem $a-2;
+        box-shadow: 0 0 0 0.3rem variables.$a-2;
       }
 
       &::-moz-range-thumb:hover {
-        box-shadow: 0 0 0 0.3rem $a-2;
+        box-shadow: 0 0 0 0.3rem variables.$a-2;
       }
 
       &:focus {
@@ -1810,7 +1814,7 @@ radio button
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: 600;
-  color: $m-1;
+  color: variables.$m-1;
   user-select: none;
 
   & .mil-radio-checkmark {
@@ -1820,13 +1824,13 @@ radio button
     transform: translateY(-50%);
     height: 2.4rem;
     width: 2.4rem;
-    background-color: $m-3;
+    background-color: variables.$m-3;
     border-radius: 50%;
-    box-shadow: inset 0 0 0 0.1rem rgba($m-2, 0.3);
+    box-shadow: inset 0 0 0 0.1rem rgba(variables.$m-2, 0.3);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: $t-sm;
+    transition: variables.$t-sm;
 
     &:after {
       content: "";
@@ -1834,16 +1838,16 @@ radio button
       margin-top: -0.3rem;
       width: 0.6rem;
       height: 1rem;
-      border: solid $m-4;
+      border: solid variables.$m-4;
       border-width: 0 0.2rem 0.2rem 0;
       transform: rotate(45deg) scale(0);
-      transition: $t-sm;
+      transition: variables.$t-sm;
     }
   }
 
   &:hover {
     & .mil-radio-checkmark {
-      box-shadow: inset 0 0 0 0.2rem $a-2;
+      box-shadow: inset 0 0 0 0.2rem variables.$a-2;
     }
   }
 
@@ -1853,8 +1857,8 @@ radio button
     cursor: pointer;
 
     &:checked ~ .mil-radio-checkmark {
-      background-color: $a-2;
-      box-shadow: inset 0 0 0 0.2rem $a-2;
+      background-color: variables.$a-2;
+      box-shadow: inset 0 0 0 0.2rem variables.$a-2;
 
       &:after {
         transform: rotate(45deg) scale(1);
@@ -1871,8 +1875,8 @@ checkbox
 
 .mil-custom-checkbox {
   height: 100%;
-  border: solid 0.1rem rgba($m-2, 0.3);
-  background-color: $m-4;
+  border: solid 0.1rem rgba(variables.$m-2, 0.3);
+  background-color: variables.$m-4;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -1880,11 +1884,11 @@ checkbox
   // border-radius: $angle / 2;
   padding: 3rem 3rem 2.5rem;
   cursor: pointer;
-  transition: $t-sm;
+  transition: variables.$t-sm;
   align-items: center;
 
   &.mil-checked {
-    border-color: $a-1 !important;
+    border-color: variables.$a-1 !important;
 
     &.mil-already-included {
       pointer-events: none;
@@ -1896,10 +1900,10 @@ checkbox
         left: 3rem;
         font-weight: 400;
         font-size: 1.4rem;
-        background-color: $a-1;
+        background-color: variables.$a-1;
         padding: 0.3rem 1rem;
         border-radius: 0 0 0.5rem 0.5rem;
-        transition: $t-sm;
+        transition: variables.$t-sm;
       }
     }
   }
@@ -1916,10 +1920,10 @@ checkbox
       left: 3rem;
       font-weight: 400;
       font-size: 1.4rem;
-      background-color: $m-3;
+      background-color: variables.$m-3;
       padding: 0.3rem 1rem;
       border-radius: 0 0 0.5rem 0.5rem;
-      transition: $t-sm;
+      transition: variables.$t-sm;
     }
   }
 
@@ -1929,18 +1933,18 @@ checkbox
     right: 2.4rem;
     height: 2.4rem;
     width: 2.4rem;
-    background-color: $m-3;
-    border: 0.1rem solid rgba($m-2, 0.4);
+    background-color: variables.$m-3;
+    border: 0.1rem solid rgba(variables.$m-2, 0.4);
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: $t-sm;
+    transition: variables.$t-sm;
   }
 
   & input[type="checkbox"]:checked ~ .mil-checkbox-checkmark {
-    background-color: $a-2;
-    border-color: $a-2;
+    background-color: variables.$a-2;
+    border-color: variables.$a-2;
   }
 
   & .mil-checkbox-checkmark:after {
@@ -1949,10 +1953,10 @@ checkbox
     margin-top: -0.3rem;
     width: 0.6rem;
     height: 1rem;
-    border: solid $m-4;
+    border: solid variables.$m-4;
     border-width: 0 0.2rem 0.2rem 0;
     transform: rotate(45deg) scale(0);
-    transition: $t-sm;
+    transition: variables.$t-sm;
   }
 
   & input[type="checkbox"]:checked ~ .mil-checkbox-checkmark:after {
@@ -1970,10 +1974,11 @@ checkbox
   }
 
   &:hover {
-    transform: scale(1.01);
+    outline: 1px solid #5a8cf5;
+    outline-offset: 2px;
 
     & .mil-checkbox-checkmark {
-      border: 0.2rem solid $a-2;
+      border: 0.2rem solid variables.$a-2;
     }
   }
 }
@@ -1985,8 +1990,8 @@ number input
 ------------------------------------------- */
 
 .mil-room-btn {
-  background-color: $a-2;
-  color: $m-4;
+  background-color: variables.$a-2;
+  color: variables.$m-4;
   border: none;
   width: 2.4rem;
   height: 2.4rem;
@@ -1994,29 +1999,29 @@ number input
   font-size: 1.6rem;
   line-height: 100%;
   padding-top: 0.2rem;
-  box-shadow: 0 0 0 0 $a-2;
+  box-shadow: 0 0 0 0 variables.$a-2;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: $t-sm;
+  transition: variables.$t-sm;
 
   &:hover {
-    box-shadow: 0 0 0 0.3rem $a-2;
+    box-shadow: 0 0 0 0.3rem variables.$a-2;
   }
 }
 
 .mil-room-count {
   margin: 0 1rem;
-  background-color: $m-3;
-  box-shadow: inset 0 0 0 0.1rem rgba($m-2, 0.3);
-  color: $m-1;
+  background-color: variables.$m-3;
+  box-shadow: inset 0 0 0 0.1rem rgba(variables.$m-2, 0.3);
+  color: variables.$m-1;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 5rem;
   height: 5rem;
-  border-radius: $angle / 2;
+  border-radius: variables.$angle * 0.5;
 }
 
 /* -------------------------------------------
@@ -2041,7 +2046,7 @@ calculator
       // height: 9rem;
 
       & .mil-selected-value {
-        color: $m-1;
+        color: variables.$m-1;
         opacity: 1;
       }
     }
@@ -2057,9 +2062,14 @@ calculator
     display: flex;
     align-items: center;
     min-height: 9rem;
-    background-color: $m-4;
+    background-color: variables.$m-4;
     padding: 3rem;
-    border: solid 0.1rem rgba($m-2, 0.3);
+    border: solid 0.1rem rgba(variables.$m-2, 0.3);
+
+    &:hover {
+      outline: 1px solid #5a8cf5;
+      outline-offset: 2px;
+    }
   }
 
   & .mil-calc-panel-2 {
@@ -2067,15 +2077,20 @@ calculator
     display: flex;
     align-items: center;
     min-height: 9rem;
-    background-color: $m-4;
+    background-color: variables.$m-4;
     padding: 1.5rem 3rem;
     padding-bottom: 0;
-    border: solid 0.1rem rgba($m-2, 0.3);
+    border: solid 0.1rem rgba(variables.$m-2, 0.3);
+
+    &:hover {
+      outline: 1px solid #5a8cf5;
+      outline-offset: 2px;
+    }
   }
 
   & .mil-service-item {
     display: block;
-    background-color: $m-4;
+    background-color: variables.$m-4;
     height: 9rem;
   }
 
@@ -2125,7 +2140,7 @@ team
 .mil-team-card {
   position: relative;
   overflow: hidden;
-  border-radius: $angle;
+  border-radius: variables.$angle;
   padding-bottom: 130%;
 
   & img {
@@ -2137,11 +2152,11 @@ team
     width: 100%;
     height: 100%;
     transform: scale(1.05);
-    transition: $t-md;
+    transition: variables.$t-md;
   }
 
   & .mil-descr {
-    background-color: rgba($m-1, 0.85);
+    background-color: rgba(variables.$m-1, 0.85);
     backdrop-filter: blur(1rem);
     padding: 3rem;
     padding-bottom: 3.2rem;
@@ -2150,8 +2165,8 @@ team
     left: 1.5rem;
     width: calc(100% - 3rem);
     opacity: 0;
-    border-radius: $angle / 2;
-    transition: $t-md;
+    border-radius: variables.$angle * 0.5;
+    transition: variables.$t-md;
   }
 
   &:hover {
@@ -2197,11 +2212,11 @@ subscription
 .mil-subscription-card {
   display: flex;
   flex-direction: column;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .mil-card-head {
     padding: 4rem;
-    border-radius: $angle $angle 0 0;
+    border-radius: variables.$angle variables.$angle 0 0;
   }
 
   & .mil-card-body {
@@ -2212,7 +2227,7 @@ subscription
     transform: scale(1.01);
 
     & .mil-btn {
-      background-color: $a-1 !important;
+      background-color: variables.$a-1 !important;
     }
   }
 }
@@ -2236,7 +2251,7 @@ call to action
   overflow: hidden;
   display: flex;
   align-items: center;
-  border-radius: $angle;
+  border-radius: variables.$angle;
 
   & .mil-box-bg {
     position: absolute;
@@ -2256,7 +2271,7 @@ call to action
       content: "";
       width: 100%;
       height: 100%;
-      background-color: rgba($m-5, 0.9);
+      background-color: rgba(variables.$m-5, 0.9);
       backdrop-filter: blur(4rem);
       position: absolute;
       top: 0;
@@ -2307,7 +2322,7 @@ call to action
   overflow: hidden;
   height: 100%;
   width: 100%;
-  border-radius: $angle;
+  border-radius: variables.$angle;
 
   & .mil-cover-frame {
     width: 100%;
@@ -2333,7 +2348,7 @@ features
   padding: 6rem;
   padding-bottom: 0;
   display: block;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .mil-card-icon {
     width: 60px;
@@ -2349,7 +2364,7 @@ steps
 .mil-step-card {
   padding: 4rem;
   display: block;
-  transition: $t-md;
+  transition: variables.$t-md;
   position: relative;
 
   &.mil-step-line {
@@ -2357,7 +2372,7 @@ steps
       content: "";
       width: 1.5rem;
       height: 1.5rem;
-      background-color: $m-4;
+      background-color: variables.$m-4;
       position: absolute;
       top: 6.2rem;
       right: -1.5rem;
@@ -2380,7 +2395,7 @@ before/after
 ------------------------------------------- */
 
 .mil-before-and-after {
-  border-radius: $angle;
+  border-radius: variables.$angle;
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -2438,7 +2453,7 @@ gallery
   width: 100%;
   padding-bottom: 65%;
   position: relative;
-  border-radius: $angle;
+  border-radius: variables.$angle;
   overflow: hidden;
   display: block;
 
@@ -2450,7 +2465,7 @@ gallery
     width: 100%;
     height: 100%;
     transform: scale(1.05);
-    transition: $t-md;
+    transition: variables.$t-md;
   }
 
   &:hover {
@@ -2469,7 +2484,7 @@ map
 .mil-map-frame {
   position: relative;
   overflow: hidden;
-  border-radius: $angle;
+  border-radius: variables.$angle;
   height: 100%;
   width: 100%;
   min-height: 50vh;
@@ -2504,19 +2519,19 @@ footer {
   }
 
   & .mil-footer-content {
-    padding-top: $space / 2;
-    padding-bottom: $space;
+    padding-top: variables.$space * 0.5;
+    padding-bottom: variables.$space;
     position: relative;
-    background-color: rgba($m-5, 0.9);
+    background-color: rgba(variables.$m-5, 0.9);
     backdrop-filter: blur(4rem);
   }
 
   & ul {
     & li {
-      transition: $t-sm;
+      transition: variables.$t-sm;
 
       & a {
-        transition: $t-sm;
+        transition: variables.$t-sm;
       }
     }
   }
@@ -2530,19 +2545,19 @@ footer {
   position: relative;
 
   & input {
-    border: solid 0.1rem rgba($m-2, 0.3);
+    border: solid 0.1rem rgba(variables.$m-2, 0.3);
     width: 100%;
     height: 7rem;
     padding: 0 4rem;
-    font-family: $font-1;
-    color: $m-3;
+    font-family: variables.$font-1;
+    color: variables.$m-3;
 
     &:focus {
       outline: inherit;
     }
 
     &.mil-light {
-      color: $m-1 !important;
+      color: variables.$m-1 !important;
     }
   }
 
@@ -2553,7 +2568,7 @@ footer {
     position: absolute;
     top: 0;
     right: 0;
-    color: $m-1 !important;
+    color: variables.$m-1 !important;
     padding: 0 3rem 0 2.8rem;
     font-size: 2rem;
     cursor: pointer;

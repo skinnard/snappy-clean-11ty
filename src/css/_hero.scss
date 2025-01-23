@@ -1,3 +1,5 @@
+@use "variables";
+
 /* -------------------------------------------
 
 hero 1
@@ -5,7 +7,7 @@ hero 1
 ------------------------------------------- */
 
 .mil-hero-1 {
-  padding-top: $space * 2 - 2rem;
+  padding-top: variables.$space * 2 - 2rem;
 
   & .mil-main-title {
     & .mil-buttons-frame {
@@ -28,7 +30,7 @@ hero 1
     & .mil-hero-image {
       position: relative;
       overflow: hidden;
-      border-radius: $angle;
+      border-radius: variables.$angle;
       padding-bottom: 50%;
 
       & .mil-scale-img {
@@ -92,7 +94,7 @@ hero 2
 .mil-hero-2 {
   height: 100vh;
   position: relative;
-  background-color: rgba($m-1, 0.1);
+  background-color: rgba(variables.$m-1, 0.1);
 
   & .mil-video-background {
     position: absolute;
@@ -113,10 +115,10 @@ hero 2
   }
 
   & .mil-main-title {
-    padding-top: $space * 2;
+    padding-top: variables.$space * 2;
     position: relative;
-    background-color: rgba($m-3, 0.9);
-    border-bottom: solid 0.1rem rgba($m-4, 0.6);
+    background-color: rgba(variables.$m-3, 0.9);
+    border-bottom: solid 0.1rem rgba(variables.$m-4, 0.6);
     backdrop-filter: blur(5rem);
 
     & .mil-buttons-frame {
@@ -162,12 +164,12 @@ hero 3
 ------------------------------------------- */
 
 .mil-hero-3 {
-  padding-top: $space + 5rem;
+  padding-top: variables.$space + 5rem;
   height: 100vh;
   position: relative;
 
   & .mil-main-title {
-    padding: $space 0;
+    padding: variables.$space 0;
     height: 100%;
     position: relative;
 
@@ -186,7 +188,7 @@ hero 3
   }
 
   & .mil-hero-right-image {
-    border-radius: $angle;
+    border-radius: variables.$angle;
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -208,7 +210,7 @@ hero 3
   }
 
   @media (max-width: 992px) {
-    padding-top: $space;
+    padding-top: variables.$space;
   }
 
   @media (max-height: 920px) {
@@ -224,7 +226,7 @@ hero 4
 
 .mil-hero-4 {
   position: relative;
-  background-color: rgba($m-1, 0.1);
+  background-color: rgba(variables.$m-1, 0.1);
 
   & .mil-video-background {
     position: absolute;
@@ -246,9 +248,9 @@ hero 4
 
   & .mil-main-title {
     min-height: 100vh;
-    padding-top: $space * 2;
+    padding-top: variables.$space * 2;
     position: relative;
-    background-color: rgba($m-5, 0.8);
+    background-color: rgba(variables.$m-5, 0.8);
     display: flex;
     align-items: center;
 
@@ -300,10 +302,10 @@ hero 5
   }
 
   & .mil-main-title {
-    padding-top: $space * 2;
+    padding-top: variables.$space * 2;
     height: 100%;
     position: relative;
-    background-color: rgba($m-5, 0.85);
+    background-color: rgba(variables.$m-5, 0.85);
 
     & .mil-buttons-frame {
       display: flex;
@@ -320,7 +322,7 @@ hero 5
   }
 
   & .mil-hero-right-image {
-    border-radius: $angle;
+    border-radius: variables.$angle;
     overflow: hidden;
     position: relative;
     height: 100%;
@@ -385,7 +387,7 @@ hero cards
       border-radius: 50%;
       width: 7rem;
       height: 7rem;
-      border: solid 0.4rem $a-2;
+      border: solid 0.4rem variables.$a-2;
     }
   }
 
@@ -399,7 +401,7 @@ hero cards
         border-radius: 50%;
         width: 5rem;
         height: 5rem;
-        border: solid 0.4rem $a-2;
+        border: solid 0.4rem variables.$a-2;
       }
     }
   }
@@ -407,7 +409,7 @@ hero cards
   &.mil-dark-border {
     & li {
       & img {
-        border: solid 0.4rem $m-1;
+        border: solid 0.4rem variables.$m-1;
       }
     }
   }
@@ -419,7 +421,7 @@ hero cards
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   &:hover {
     transform: scale(1.02);
@@ -433,16 +435,16 @@ hero cards
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .mil-text-part {
     padding: 4rem 4rem 4rem 0;
-    border-radius: $angle 0 0 $angle;
+    border-radius: variables.$angle 0 0 variables.$angle;
     width: 100%;
     display: flex;
     justify-content: flex-center;
     align-items: center;
-    box-shadow: 4px 0 0 0px $a-1;
+    box-shadow: 4px 0 0 0px variables.$a-1;
 
     & .mil-dscnt-star {
       position: relative;
@@ -473,7 +475,7 @@ hero cards
         }
 
         & div {
-          color: $m-1;
+          color: variables.$m-1;
         }
       }
     }
@@ -509,7 +511,7 @@ hero cards
 
   @media (max-width: 430px) {
     & .mil-text-part {
-      border-radius: $angle;
+      border-radius: variables.$angle;
       box-shadow: none;
     }
 
@@ -553,17 +555,17 @@ circle text
       height: 15rem;
 
       & text {
-        fill: $m-1;
+        fill: variables.$m-1;
         text-transform: uppercase;
         font-weight: 500;
         font-size: 1.6rem;
 
         &.mil-m-3 {
-          fill: $m-3;
+          fill: variables.$m-3;
         }
 
         &.mil-m-2 {
-          fill: $m-2;
+          fill: variables.$m-2;
         }
       }
     }
@@ -605,11 +607,11 @@ inner page hero
 ------------------------------------------- */
 
 .mil-hero-inner {
-  padding-top: $space * 2 + 9rem;
-  padding-bottom: $space;
+  padding-top: variables.$space * 2 + 9rem;
+  padding-bottom: variables.$space;
 
   @media (max-width: 992px) {
-    padding-top: $space * 2;
+    padding-top: variables.$space * 2;
     padding-bottom: 4rem;
   }
 }

@@ -74,9 +74,9 @@ p.s. I am available for Freelance hire (UI design, web development). email: mill
 
 --------------------------------------------*/
 
-@import 'variables';
-@import 'starter';
-@import 'hero';
-@import 'components';
-@import 'common';
-@import 'custom';
+@use 'variables';
+@use 'starter';
+@use 'hero';
+@use 'components';
+@use 'common';
+@use 'custom';

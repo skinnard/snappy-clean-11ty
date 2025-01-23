@@ -2,7 +2,7 @@
 <div>
     <div class="container mil-p-0-f">
         <div class="mil-section-title mil-mb-f mil-up">
-            <h2 class="mil-fs-36">Price Calculator</h2>
+            <h2 class="mil-fs-36">Quote Form</h2>
             <div class="mil-dots"></div>
             <b class="mil-fs-24">06</b>
         </div>
@@ -39,9 +39,9 @@
                         <div class="mil-input-frame">
                             <input
                                 type="tel"
-                                id="user-phone-3"
+                                id="phone"
                                 name="user-tel"
-                                class="mil-phone-input bg-white"
+                                class="mil-phone-input mil-br-md bg-white"
                                 placeholder="Phone"
                                 autocomplete="tel"
                                 required>
@@ -153,7 +153,7 @@
                             <i class="far fa-chevron-down mil-a-2"></i>
                         </div>
                     </fieldset>
-                    <fieldset class="col-12 col-md-6">
+                    {# <fieldset class="col-12 col-md-6">
                         <div class="mil-calc-panel mil-br-md mil-mb-15 mil-up">
                             <div class="mil-area-slider mil-aic mil-mb-30">
                                 <label for="area" class="mil-m-1 mil-fw-600 mil-mr-30 mil-fs-18">Area (sqft):</label>
@@ -167,10 +167,23 @@
                                 <span id="area-value" class="mil-value mil-m-1 mil-fw-600 mil-fs-18 ml-6">10,000sqft</span>
                             </div>
                         </div>
+                    </fieldset> #}
+                    <fieldset class="col-6 mil-mb-15 mil-up">
+                        <div class="mil-input-frame">
+                            <input
+                                type="number"
+                                id="area-value"
+                                name="area-value"
+                                placeholder="Approx Area (sqft)"
+                                class="mil-br-md !bg-white"
+                                autocomplete="area-value"
+                                required>
+                            <i class="far fa-arrows-alt mil-a-2"></i>
+                        </div>
                     </fieldset>
                     <fieldset class="col-12 col-md-6">
-                        <div class="mil-calc-panel mil-br-md mil-mb-15 mil-up">
-                            <div class="mil-aic mil-mb-30">
+                        <div class="mil-calc-panel mil-br-md mil-mb-15 mil-up !h-28 !p-0 !min-h-0 !pl-12">
+                            <div class="mil-aic">
                                 <label for="preferred-date" class="mil-m-1 mil-fw-600 mil-mr-30 mil-fs-18">Preferred date</label>
                                 <input type="date" id="preferred-date" min="2015-01-01T00:00" max="2025-12-31T23:59" step="1">
                             </div>

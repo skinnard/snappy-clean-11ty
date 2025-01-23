@@ -1,4 +1,4 @@
-// Функція для розрахунку ціни
+
 function calculatePrice() {
     const propertyTypeRadio = document.querySelector('input[name="property"]:checked');
     const cleaningRadio = document.querySelector('input[name="cleaning"]:checked');
@@ -31,7 +31,6 @@ function calculatePrice() {
     return basePrice.toFixed(2);
 }
 
-// Оновлення загальної ціни на сторінці
 function updateTotalPrice() {
     const totalPriceElement = document.getElementById('total-price');
     if (totalPriceElement) {
@@ -39,7 +38,6 @@ function updateTotalPrice() {
     }
 }
 
-// Ініціалізація калькулятора
 function initializeCalculator() {
     const cleaningRadios = document.querySelectorAll('input[name="cleaning"]');
     const propertyRadios = document.querySelectorAll('input[name="property"]');
@@ -64,6 +62,8 @@ function initializeCalculator() {
     if (areaSlider && areaValue) {
         areaSlider.addEventListener('input', () => {
             areaValue.textContent = `${areaSlider.value}sqft`;
+
+            console.log('areaValue.textContent: ', areaValue.textContent);
             updateTotalPrice();
         });
     }

@@ -8,9 +8,9 @@
     "watch-tw": "npx tailwindcss -i ./src/css/tailwind.css -o ./_site/css/tailwind.css -w",
     "watch-js": "npx esbuild ./src/js/main.js --outfile=./_site/js/scripts.js --bundle --target=es2018 --watch",
     "start": "NODE_ENV=development concurrently \"node hash\"  \"ELEVENTY_ENV=development eleventy --serve\"  \"npm:watch-*\"",
-    "build-css": "npx tailwindcss -i ./src/css/tailwind.css -o ./_site/css/tailwind.css --minify",
-    "build-tw": "npx tailwindcss -i ./src/css/style.scss -o ./_site/css/style.css --minify",
-    "build-js": "npx esbuild ./assets/js/main.js --outfile=./_site/js/scripts.js  --bundle --target=es2018 --minify",
+    "build-tw": "npx tailwindcss -i ./src/css/tailwind.css -o ./_site/css/tailwind.css --minify",
+    "build-css": "npx tailwindcss -i ./src/css/style.scss -o ./_site/css/style.css --minify",
+    "build-js": "npx esbuild ./src/js/main.js --outfile=./_site/js/scripts.js  --bundle --target=es2018 --minify",
     "build": "NODE_ENV=production concurrently \"npm:build-*\" && node hash && ELEVENTY_ENV=production eleventy"
   },
   "keywords": [

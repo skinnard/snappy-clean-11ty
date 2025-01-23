@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 /* -------------------------------------------
 
 default
@@ -16,8 +19,8 @@ default
 }
 
 *::selection {
-  color: $m-1;
-  background-color: $a-1;
+  color: variables.$m-1;
+  background-color: variables.$a-1;
 }
 
 ::-webkit-scrollbar {
@@ -44,9 +47,9 @@ body {
   overscroll-behavior: none;
   padding: 0;
   margin: 0;
-  background-color: $m-3;
+  background-color: variables.$m-3;
   height: auto;
-  color: $m-2;
+  color: variables.$m-2;
 }
 
 input[type="text"],
@@ -72,13 +75,13 @@ a {
     left: 0;
     height: 0.15rem;
     width: 0;
-    background-color: $a-1;
-    transition: $t-sm;
+    background-color: variables.$a-1;
+    transition: variables.$t-sm;
   }
 
   &.mil-a-2 {
     &:after {
-      background-color: $a-2;
+      background-color: variables.$a-2;
     }
   }
 
@@ -100,7 +103,7 @@ ul {
 
 blockquote {
   padding: 40px;
-  border-radius: $angle;
+  border-radius: variables.$angle;
 }
 
 .mil-page-wrapper {
@@ -153,13 +156,13 @@ page transitions
   opacity: 1;
   filter: blur(0);
   transform: scale(1);
-  transition: $t-md;
+  transition: variables.$t-md;
   transition-delay: 0.2s;
 
   & .mil-delay-load {
     opacity: 1;
     transform: scale(1);
-    transition: $t-lg;
+    transition: variables.$t-lg;
     transition-delay: 0.4s;
   }
 }
@@ -179,12 +182,12 @@ html.is-animating .transition-fade {
 
 .mil-menu-transition {
   transform: translateY(0) scale(1);
-  transition: $t-md;
+  transition: variables.$t-md;
 
   & .mil-current {
     &:before {
       transform: scale(1);
-      transition: $t-md;
+      transition: variables.$t-md;
     }
   }
 }
@@ -507,165 +510,165 @@ spaces
 ------------------------------------------- */
 
 .mil-p-ff {
-  padding-top: $space;
-  padding-bottom: $space;
+  padding-top: variables.$space;
+  padding-bottom: variables.$space;
 }
 
 .mil-p-0-f {
-  padding-bottom: $space;
+  padding-bottom: variables.$space;
 }
 
 .mil-p-f-0 {
-  padding-top: $space;
+  padding-top: variables.$space;
 }
 
 .mil-p-0-15 {
-  padding-bottom: calc($space - 1.5rem);
+  padding-bottom: calc(variables.$space - 1.5rem);
 }
 
 .mil-p-0-30 {
-  padding-bottom: calc($space - 3rem);
+  padding-bottom: calc(variables.$space - 3rem);
 }
 
 .mil-p-0-40 {
-  padding-bottom: calc($space - 4rem);
+  padding-bottom: calc(variables.$space - 4rem);
 }
 
 .mil-p-0-60 {
-  padding-bottom: calc($space - 6rem);
+  padding-bottom: calc(variables.$space - 6rem);
 }
 
 .mil-p-0-90 {
-  padding-bottom: calc($space - 9rem);
+  padding-bottom: calc(variables.$space - 9rem);
 }
 
 .mil-p-f-15 {
-  padding-top: $space;
-  padding-bottom: calc($space - 1.5rem);
+  padding-top: variables.$space;
+  padding-bottom: calc(variables.$space - 1.5rem);
 }
 
 .mil-p-f-30 {
-  padding-top: $space;
-  padding-bottom: calc($space - 3rem);
+  padding-top: variables.$space;
+  padding-bottom: calc(variables.$space - 3rem);
 }
 
 .mil-p-f-40 {
-  padding-top: $space;
-  padding-bottom: calc($space - 4rem);
+  padding-top: variables.$space;
+  padding-bottom: calc(variables.$space - 4rem);
 }
 
 .mil-p-f-60 {
-  padding-top: $space;
-  padding-bottom: calc($space - 6rem);
+  padding-top: variables.$space;
+  padding-bottom: calc(variables.$space - 6rem);
 }
 
 .mil-p-f-90 {
-  padding-top: $space;
-  padding-bottom: calc($space - 9rem);
+  padding-top: variables.$space;
+  padding-bottom: calc(variables.$space - 9rem);
 }
 
 @media (max-width: 1200px) {
   .mil-lg-p-ff {
-    padding-top: $space;
-    padding-bottom: $space;
+    padding-top: variables.$space;
+    padding-bottom: variables.$space;
   }
 
   .mil-lg-p-0-f {
-    padding-bottom: $space;
+    padding-bottom: variables.$space;
   }
 
   .mil-lg-p-f-0 {
-    padding-top: $space;
+    padding-top: variables.$space;
   }
 
   .mil-lg-p-f-15 {
-    padding-top: $space;
-    padding-bottom: calc($space - 1.5rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 1.5rem);
   }
 
   .mil-lg-p-f-30 {
-    padding-top: $space;
-    padding-bottom: calc($space - 3rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 3rem);
   }
 
   .mil-lg-p-f-60 {
-    padding-top: $space;
-    padding-bottom: calc($space - 6rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 6rem);
   }
 
   .mil-lg-p-f-90 {
-    padding-top: $space;
-    padding-bottom: calc($space - 9rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 9rem);
   }
 }
 
 @media (max-width: 992px) {
   .mil-md-p-ff {
-    padding-top: $space;
-    padding-bottom: $space;
+    padding-top: variables.$space;
+    padding-bottom: variables.$space;
   }
 
   .mil-md-p-0-f {
-    padding-bottom: $space;
+    padding-bottom: variables.$space;
   }
 
   .mil-md-p-f-0 {
-    padding-top: $space;
+    padding-top: variables.$space;
   }
 
   .mil-md-p-f-15 {
-    padding-top: $space;
-    padding-bottom: calc($space - 1.5rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 1.5rem);
   }
 
   .mil-md-p-f-30 {
-    padding-top: $space;
-    padding-bottom: calc($space - 3rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 3rem);
   }
 
   .mil-md-p-f-60 {
-    padding-top: $space;
-    padding-bottom: calc($space - 6rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 6rem);
   }
 
   .mil-md-p-f-90 {
-    padding-top: $space;
-    padding-bottom: calc($space - 9rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 9rem);
   }
 }
 
 @media (max-width: 768px) {
   .mil-sm-p-ff {
-    padding-top: $space;
-    padding-bottom: $space;
+    padding-top: variables.$space;
+    padding-bottom: variables.$space;
   }
 
   .mil-sm-p-0-f {
-    padding-bottom: $space;
+    padding-bottom: variables.$space;
   }
 
   .mil-sm-p-f-0 {
-    padding-top: $space;
+    padding-top: variables.$space;
   }
 
   .mil-sm-p-f-15 {
-    padding-top: $space;
-    padding-bottom: calc($space - 1.5rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 1.5rem);
   }
 
   .mil-sm-p-f-30 {
-    padding-top: $space;
-    padding-bottom: calc($space - 3rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 3rem);
   }
 
   .mil-sm-p-f-60 {
-    padding-top: $space;
-    padding-bottom: calc($space - 6rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 6rem);
   }
 
   .mil-sm-p-f-90 {
-    padding-top: $space;
-    padding-bottom: calc($space - 9rem);
+    padding-top: variables.$space;
+    padding-bottom: calc(variables.$space - 9rem);
   }
 }
 
@@ -710,7 +713,7 @@ margins
 }
 
 .mil-mt-f {
-  margin-top: $space;
+  margin-top: variables.$space;
 }
 
 // margin-right
@@ -748,7 +751,7 @@ margins
 }
 
 .mil-mr-f {
-  margin-right: $space;
+  margin-right: variables.$space;
 }
 
 // margin-bottom
@@ -786,7 +789,7 @@ margins
 }
 
 .mil-mb-f {
-  margin-bottom: $space;
+  margin-bottom: variables.$space;
 }
 
 // margin-left
@@ -824,7 +827,7 @@ margins
 }
 
 .mil-ml-f {
-  margin-left: $space;
+  margin-left: variables.$space;
 }
 
 @media (max-width: 1200px) {
@@ -863,7 +866,7 @@ margins
   }
 
   .mil-lg-mt-f {
-    margin-top: $space;
+    margin-top: variables.$space;
   }
 
   // margin-right
@@ -901,7 +904,7 @@ margins
   }
 
   .mil-lg-mr-f {
-    margin-right: $space;
+    margin-right: variables.$space;
   }
 
   // margin-bottom
@@ -939,7 +942,7 @@ margins
   }
 
   .mil-lg-mb-f {
-    margin-bottom: $space;
+    margin-bottom: variables.$space;
   }
 
   // margin-left
@@ -977,7 +980,7 @@ margins
   }
 
   .mil-lg-ml-f {
-    margin-left: $space;
+    margin-left: variables.$space;
   }
 }
 
@@ -1013,7 +1016,7 @@ margins
   }
 
   .mil-md-mt-f {
-    margin-top: $space;
+    margin-top: variables.$space;
   }
 
   // margin-right
@@ -1047,7 +1050,7 @@ margins
   }
 
   .mil-md-mr-f {
-    margin-right: $space;
+    margin-right: variables.$space;
   }
 
   // margin-bottom
@@ -1085,7 +1088,7 @@ margins
   }
 
   .mil-md-mb-f {
-    margin-bottom: $space;
+    margin-bottom: variables.$space;
   }
 
   // margin-left
@@ -1119,7 +1122,7 @@ margins
   }
 
   .mil-md-ml-f {
-    margin-left: $space;
+    margin-left: variables.$space;
   }
 }
 
@@ -1155,7 +1158,7 @@ margins
   }
 
   .mil-sm-mt-f {
-    margin-top: $space;
+    margin-top: variables.$space;
   }
 
   // margin-right
@@ -1189,7 +1192,7 @@ margins
   }
 
   .mil-sm-mr-f {
-    margin-right: $space;
+    margin-right: variables.$space;
   }
 
   // margin-bottom
@@ -1227,7 +1230,7 @@ margins
   }
 
   .mil-sm-mb-f {
-    margin-bottom: $space;
+    margin-bottom: variables.$space;
   }
 
   // margin-left
@@ -1261,7 +1264,7 @@ margins
   }
 
   .mil-sm-ml-f {
-    margin-left: $space;
+    margin-left: variables.$space;
   }
 }
 
@@ -1336,30 +1339,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-1;
-  color: $m-1;
+  font-family: variables.$font-1;
+  color: variables.$m-1;
   font-weight: 600;
   line-height: 100%;
   letter-spacing: -0.1rem;
 }
 
 body {
-  font-family: $font-1;
+  font-family: variables.$font-1;
   font-size: 1.6rem;
 }
 
 // font-family
 
 .mil-ff-1 {
-  font-family: $font-1;
+  font-family: variables.$font-1;
 }
 
 .mil-ff-2 {
-  font-family: $font-2;
+  font-family: variables.$font-2;
 }
 
 .mil-ff-3 {
-  font-family: $font-3;
+  font-family: variables.$font-3;
 }
 
 // font-size
@@ -1865,27 +1868,27 @@ text color
 ------------------------------------------- */
 
 .mil-m-1 {
-  color: $m-1;
+  color: variables.$m-1;
 }
 
 .mil-m-2 {
-  color: $m-2;
+  color: variables.$m-2;
 }
 
 .mil-m-3 {
-  color: $m-3;
+  color: variables.$m-3;
 }
 
 .mil-m-4 {
-  color: $m-4;
+  color: variables.$m-4;
 }
 
 .mil-a-1 {
-  color: $a-1;
+  color: variables.$a-1;
 }
 
 .mil-a-2 {
-  color: $a-2;
+  color: variables.$a-2;
 }
 
 .mil-hover-bri-105:hover {
@@ -1901,27 +1904,27 @@ text color
 }
 
 .mil-hover-m-1:hover {
-  color: $m-1;
+  color: variables.$m-1;
 }
 
 .mil-hover-m-2:hover {
-  color: $m-2;
+  color: variables.$m-2;
 }
 
 .mil-hover-m-3:hover {
-  color: $m-3;
+  color: variables.$m-3;
 }
 
 .mil-hover-m-4:hover {
-  color: $m-4;
+  color: variables.$m-4;
 }
 
 .mil-hover-a-1:hover {
-  color: $a-1;
+  color: variables.$a-1;
 }
 
 .mil-hover-a-2:hover {
-  color: $a-2;
+  color: variables.$a-2;
 }
 
 /* -------------------------------------------
@@ -1931,55 +1934,55 @@ background color
 ------------------------------------------- */
 
 .mil-bg-m-1 {
-  background-color: $m-1 !important;
+  background-color: variables.$m-1 !important;
 }
 
 .mil-bg-m-2 {
-  background-color: $m-2 !important;
+  background-color: variables.$m-2 !important;
 }
 
 .mil-bg-m-2-light {
-  background-color: lighten($m-2, 32%) !important;
+  background-color: color.adjust(variables.$m-2, $lightness: 32%) !important;
 }
 
 .mil-bg-m-3 {
-  background-color: $m-3 !important;
+  background-color: variables.$m-3 !important;
 }
 
 .mil-bg-m-4 {
-  background-color: $m-4 !important;
+  background-color: variables.$m-4 !important;
 }
 
 .mil-bg-m-5 {
-  background-color: $m-5 !important;
+  background-color: variables.$m-5 !important;
 }
 
 .mil-bg-a-1 {
-  background-color: $a-1 !important;
+  background-color: variables.$a-1 !important;
 }
 
 .mil-bg-a-2 {
-  background-color: $a-2 !important;
+  background-color: variables.$a-2 !important;
 }
 
 .mil-hover-bg-m-1:hover {
-  background-color: $m-1 !important;
+  background-color: variables.$m-1 !important;
 }
 
 .mil-hover-bg-m-2:hover {
-  background-color: $m-2 !important;
+  background-color: variables.$m-2 !important;
 }
 
 .mil-hover-bg-m-3:hover {
-  background-color: $m-3 !important;
+  background-color: variables.$m-3 !important;
 }
 
 .mil-hover-bg-a-1:hover {
-  background-color: $a-1 !important;
+  background-color: variables.$a-1 !important;
 }
 
 .mil-hover-bg-a-2:hover {
-  background-color: $a-2 !important;
+  background-color: variables.$a-2 !important;
 }
 
 /* -------------------------------------------
@@ -2015,17 +2018,17 @@ border radius
 }
 
 .mil-br-xl {
-  border-radius: calc($angle * 10);
+  border-radius: calc(variables.$angle * 10);
 }
 
 .mil-br-lg {
-  border-radius: calc($angle + 0.5rem);
+  border-radius: calc(variables.$angle + 0.5rem);
 }
 
 .mil-br-md {
-  border-radius: $angle;
+  border-radius: variables.$angle;
 }
 
 .mil-br-sm {
-  border-radius: calc($angle - 0.5rem);
+  border-radius: calc(variables.$angle - 0.5rem);
 }

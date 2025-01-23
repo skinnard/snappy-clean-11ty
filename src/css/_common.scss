@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "variables";
+
 /* -------------------------------------------
 
 buttons
@@ -9,16 +12,16 @@ buttons
     text-transform: uppercase;
     letter-spacing: .2rem;
     font-weight: 500;
-    font-family: $font-1;
+    font-family: variables.$font-1;
     font-size: 1.4rem;
     white-space: nowrap;
-    color: $m-1;
+    color: variables.$m-1;
     padding: 0 4rem;
     display: inline-flex;
     align-items: center;
     height: 7rem;
     padding: 0 4rem;
-    transition: $t-md;
+    transition: variables.$t-md;
 
     & i {
         width: 5rem;
@@ -40,11 +43,11 @@ buttons
     }
 
     &.mil-bg-m-2 {
-        background-color: lighten($m-2, 32%);
+        background-color: color.adjust(variables.$m-2, $lightness: 32%);
     }
 
     &.mil-m-4 {
-        color: $m-4;
+        color: variables.$m-4;
     }
 
     &.mil-sm {
@@ -102,7 +105,7 @@ icons
     height: 5rem;
     border-radius: 50%;
     font-size: 1.8rem;
-    border: solid .1rem rgba($m-2, .2);
+    border: solid .1rem rgba(variables.$m-2, .2);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -163,7 +166,7 @@ background
         height: 100%;
         top: 0;
         left: 0;
-        background-color: rgba($m-5, .9);
+        background-color: rgba(variables.$m-5, .9);
     }
 }
 
@@ -233,7 +236,7 @@ section title
     }
 
     & b {
-        color: rgba($m-2, .4);
+        color: rgba(variables.$m-2, .4);
         font-weight: 600;
 
     }
@@ -245,7 +248,7 @@ section title
 
 .mil-dots {
     width: 100%;
-    border-bottom: dotted .4rem rgba($m-2, .3);
+    border-bottom: dotted .4rem rgba(variables.$m-2, .3);
 }
 
 /* -------------------------------------------
@@ -265,11 +268,11 @@ breadcrumbs
         }
 
         & a {
-            color: $m-1;
-            transition: $t-sm;
+            color: variables.$m-1;
+            transition: variables.$t-sm;
 
             &:hover {
-                color: $a-2;
+                color: variables.$a-2;
             }
         }
 
@@ -282,7 +285,7 @@ breadcrumbs
 
             & a {
                 pointer-events: none;
-                color: $m-2;
+                color: variables.$m-2;
             }
         }
     }
@@ -296,7 +299,7 @@ list
 
 .mil-check-list {
     & li {
-        color: $m-1;
+        color: variables.$m-1;
         margin-bottom: 15px;
 
         &:last-child {
@@ -308,7 +311,7 @@ list
             font-weight: 600;
             content: "\f058";
             margin-right: 10px;
-            color: $a-2;
+            color: variables.$a-2;
 
         }
     }
@@ -341,9 +344,9 @@ pagination
             width: 6rem;
             height: 6rem;
             border-radius: 6rem;
-            background-color: $m-4;
-            color: $m-1;
-            transition: $t-sm;
+            background-color: variables.$m-4;
+            color: variables.$m-1;
+            transition: variables.$t-sm;
 
             &:hover {
                 transform: scale(1.1);
@@ -353,7 +356,7 @@ pagination
         &.mil-current {
             & a {
                 font-weight: 600;
-                background-color: $a-1;
+                background-color: variables.$a-1;
 
                 &:hover {
                     transform: scale(1);

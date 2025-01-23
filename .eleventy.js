@@ -1,7 +1,7 @@
 const htmlmin = require('html-minifier')
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 const esbuild = require("esbuild");
-const { sassPlugin } = require("esbuild-sass-plugin");
+// const { sassPlugin } = require("esbuild-sass-plugin");
 
 module.exports = function(eleventyConfig) {
   /**
@@ -37,17 +37,17 @@ module.exports = function(eleventyConfig) {
     return content
   })
 
-  eleventyConfig.on("afterBuild", () => {
-    return esbuild.build({
-      entryPoints: ["src/css/style.scss", "src/js/main.js"],
-      outdir: "_site",
-      minify: process.env.ELEVENTY_ENV === "production",
-      sourcemap: process.env.ELEVENTY_ENV !== "production",
-      plugins: [sassPlugin()]
-    });
-  });
-  eleventyConfig.addWatchTarget("src/css/");
-  eleventyConfig.addWatchTarget("src/js/");
+  // eleventyConfig.on("afterBuild", () => {
+  //   return esbuild.build({
+  //     entryPoints: ["src/css/style.scss", "src/js/main.js"],
+  //     outdir: "_site",
+  //     minify: process.env.ELEVENTY_ENV === "production",
+  //     sourcemap: process.env.ELEVENTY_ENV !== "production",
+  //     plugins: [sassPlugin()]
+  //   });
+  // });
+  // eleventyConfig.addWatchTarget("src/css/");
+  // eleventyConfig.addWatchTarget("src/js/");
 
   return {
     dir: {
