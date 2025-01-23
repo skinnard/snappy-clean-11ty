@@ -2,7 +2,7 @@
 <html lang="en">
   {% include "components/global/head.njk" %}
   <body
-    class="antialiased">
+    class="antialiased page--{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
     <!-- page wrapper -->
     <div class="mil-page-wrapper">
       
