@@ -1,92 +1,97 @@
 <!-- about -->
 <div class="mil-p-0-15 mil-relative">
     <img src="/img/ui/bg.png" alt="background" class="mil-bg" style="top: -10rem">
-    <div class="container">
-        <div class="mil-section-title mil-mb-f mil-up">
-            <h2 class="mil-fs-36">A little bit about us</h2>
-            <div class="mil-dots"></div>
-            <b class="mil-fs-24">03</b>
-        </div>
-        <div class="row">
-            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
-                <div class="mil-about-box mil-br-md">
-                    <img src="/img/ui/a1.jpg" alt="cover" class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1">
-                </div>
+        <div class="container">
+            <div class="mil-section-title mil-mb-f mil-up">
+                <h2 class="mil-fs-36">A little bit about us</h2>
+                <div class="mil-dots"></div>
+                <b class="mil-fs-24">03</b>
             </div>
-            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
-                <div class="mil-about-box mil-br-md mil-bg-m-1">
-                    <img
-                        src="/img/ui/bg-i1.png"
-                        alt="icons"
-                        class="mil-box-icons mil-opacity-05 mil-parallax-img"
-                        data-value-1="0"
-                        data-value-2="-60">
-                    <div class="mil-box-content mil-column mil-jcb mil-tar">
-                        <ul class="mil-users-inline mil-dark-border mil-sm mil-jce mil-mb-20">
-                            <li><img src="/img/users/1.jpg" alt="User"></li>
-                            <li><img src="/img/users/2.jpg" alt="User"></li>
-                            <li><img src="/img/users/3.jpg" alt="User"></li>
-                            <li><img src="/img/users/4.jpg" alt="User"></li>
-                        </ul>
-                        <div>
-                            <div class="mil-fs-72 mil-fw-600 mil-m-3 mil-mb-20">
-                                <span class="mil-counter" data-number="2740">2740</span>
-                                <span class="mil-a-1">+</span>
+            <div class="row">
+                <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
+                    <div class="mil-about-box mil-br-md">
+                        <img src="/img/ui/a1.jpg" alt="cover" class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1"></div>
+                    </div>
+                    <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
+                        <div class="mil-about-box mil-br-md mil-bg-m-1">
+                            <img
+                                src="/img/ui/bg-i1.png"
+                                alt="icons"
+                                class="mil-box-icons mil-opacity-05 mil-parallax-img"
+                                data-value-1="0"
+                                data-value-2="-60">
+                                <div class="mil-box-content mil-column mil-jcb mil-tar">
+                                    <ul class="mil-users-inline mil-dark-border mil-sm mil-jce mil-mb-20">
+                                        {% for user in reviews %}
+                                            <li>
+                                                <img src="/img/users/{{ user.image }}.jpg" alt="User"/>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                    <div>
+                                        <div class="mil-fs-72 mil-fw-600 mil-m-3 mil-mb-20">
+                                            <span class="mil-counter" data-number="2740">2740</span>
+                                            <span class="mil-a-1">+</span>
+                                        </div>
+                                        <p class="mil-fs-20 mil-m-3 mil-opacity-4">Satisfied customers a year,
+                                            <br>and this is just the beginning
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <p class="mil-fs-20 mil-m-3 mil-opacity-4">Satisfied customers a year, <br>and this is just the beginning
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
-                <div class="mil-about-box mil-br-md">
-                    <img src="/img/ui/a2.jpg" alt="cover" class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1">
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
-                <div class="mil-about-box mil-br-md mil-bg-a-2">
-                    <div class="mil-box-content mil-column mil-jcb">
-                        <p class="mil-fs-38 mil-fw-600 mil-m-4">
-                            <span class="mil-counter" data-number="12">12</span>
-                            years of <br>experience in <br>cleaning.</p>
-                        <div>
-                            <p class="mil-fs-20 mil-m-3 mil-opacity-7">As many as 12 years of reliability and professionalism</p>
-                        </div>
-                        <div class="mil-bg-number mil-scale-img" data-value-1="1.2" data-value-2="1">12</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up mil-relative">
-                <div class="mil-about-box mil-br-md">
-                    <img
-                        src="/img/ui/a3.jpg"
-                        alt="cover"
-                        class="mil-box-cover mil-scale-img"
-                        data-value-1="1.2"
-                        data-value-2="1"
-                        style="object-position: bottom">
-                </div>
-                <img src="/img/ui/s1.png" alt="star" class="mil-deco-star">
-            </div>
-            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
-                <div class="mil-about-box mil-br-md mil-bg-a-1">
-                    <img
-                        src="/img/ui/bg-i2.png"
-                        alt="icons"
-                        class="mil-box-icons mil-scale-img"
-                        data-value-1="1.3"
-                        data-value-2="1"
-                        style="right: -2rem; top: 10%">
-                    <div class="mil-box-content mil-column mil-jcb">
-                        <p class="mil-fs-38 mil-fw-600 mil-m-1">We clean with <br> the environment <br>in mind.</p>
-                        <div>
-                            <p class="mil-fs-20 mil-m-1">We use only professional <br>ecological household chemicals <br>and materials.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- about end -->
+                            <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
+                                <div class="mil-about-box mil-br-md">
+                                    <img src="/img/ui/a2.jpg" alt="cover" class="mil-box-cover mil-scale-img" data-value-1="1.2" data-value-2="1"></div>
+                                </div>
+                                <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
+                                    <div class="mil-about-box mil-br-md mil-bg-a-2">
+                                        <div class="mil-box-content mil-column mil-jcb">
+                                            <p class="mil-fs-38 mil-fw-600 mil-m-4">
+                                                <span class="mil-counter" data-number="12">12</span>
+                                                years of
+                                                <br>experience in
+                                                    <br>cleaning.</p>
+                                                    <div>
+                                                        <p class="mil-fs-20 mil-m-3 mil-opacity-7">As many as 12 years of reliability and professionalism</p>
+                                                    </div>
+                                                    <div class="mil-bg-number mil-scale-img" data-value-1="1.2" data-value-2="1">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-xl-4 mil-mb-15 mil-up mil-relative">
+                                            <div class="mil-about-box mil-br-md">
+                                                <img
+                                                    src="/img/ui/a3.jpg"
+                                                    alt="cover"
+                                                    class="mil-box-cover mil-scale-img"
+                                                    data-value-1="1.2"
+                                                    data-value-2="1"
+                                                    style="object-position: bottom"></div>
+                                                <img src="/img/ui/s1.png" alt="star" class="mil-deco-star"></div>
+                                                <div class="col-md-6 col-xl-4 mil-mb-15 mil-up">
+                                                    <div class="mil-about-box mil-br-md mil-bg-a-1">
+                                                        <img
+                                                            src="/img/ui/bg-i2.png"
+                                                            alt="icons"
+                                                            class="mil-box-icons mil-scale-img"
+                                                            data-value-1="1.3"
+                                                            data-value-2="1"
+                                                            style="right: -2rem; top: 10%">
+                                                            <div class="mil-box-content mil-column mil-jcb">
+                                                                <p class="mil-fs-38 mil-fw-600 mil-m-1">We clean with
+                                                                    <br>
+                                                                        the environment
+                                                                        <br>in mind.</p>
+                                                                        <div>
+                                                                            <p class="mil-fs-20 mil-m-1">We use only professional
+                                                                                <br>ecological household chemicals
+                                                                                    <br>and materials.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- about end -->

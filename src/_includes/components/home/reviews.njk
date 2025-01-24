@@ -19,108 +19,22 @@
                 </div>
                 <div class="swiper-container mil-reviews-slider mil-mb-60">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div
-                                class="mil-review-frame mil-tac"
-                                data-swiper-parallax="-600"
-                                data-swiper-parallax-opacity="0"
-                                data-swiper-parallax-scale=".6">
-                                <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">Sarah Newman</h5>
-                                <p class="mil-m-1 mil-up-text mil-up mil-mb-40">Envato market</p>
-                                <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
-                                    <i>"</i>
+                        {% for review in reviews %}
+                            <div class="swiper-slide">
+                                <div
+                                    class="mil-review-frame mil-tac"
+                                    data-swiper-parallax="-600"
+                                    data-swiper-parallax-opacity="0"
+                                    data-swiper-parallax-scale=".6">
+                                    <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">{{ review.name }}</h5>
+                                    <p class="mil-m-1 mil-up-text mil-up mil-mb-40">{{ review.city }}</p>
+                                    <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
+                                        <i>"</i>
+                                    </div>
+                                    <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">{{ review.review }}</p>
                                 </div>
-                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">I’ve been using Cleandy for my home cleaning needs for over six months
-                                    now, and I couldn’t be more satisfied. Their team is always punctual, professional, and friendly. The attention to
-                                    detail is fantastic, and my apartment has never looked better. I especially love how fresh and organized everything
-                                    feels after they’re done. I highly recommend Cleandy for anyone looking for reliable cleaning services!</p>
                             </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="mil-review-frame mil-tac"
-                                data-swiper-parallax="-600"
-                                data-swiper-parallax-opacity="0"
-                                data-swiper-parallax-scale=".6">
-                                <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">Emma Trueman</h5>
-                                <p class="mil-m-1 mil-up-text mil-up mil-mb-40">Envato market</p>
-                                <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
-                                    <i>"</i>
-                                </div>
-                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">Cleandy provided an exceptional deep cleaning service for my office. The
-                                    cleaners were thorough and left no corner untouched. It’s refreshing to see such dedication to their work, and they used
-                                    high-quality, eco-friendly products, which was a big plus for us. Our office now looks spotless, and we will definitely
-                                    be using Cleandy on a regular basis!</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="mil-review-frame mil-tac"
-                                data-swiper-parallax="-600"
-                                data-swiper-parallax-opacity="0"
-                                data-swiper-parallax-scale=".6">
-                                <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">Paul Oldman</h5>
-                                <p class="mil-m-1 mil-up-text mil-up mil-mb-40">Envato market</p>
-                                <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
-                                    <i>"</i>
-                                </div>
-                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">I hired Cleandy to clean my house before hosting a big family gathering,
-                                    and they exceeded all my expectations. The kitchen, bathrooms, and living areas were sparkling clean, and they even took
-                                    care of some tough stains I thought would never go away. The team was efficient and friendly, making the whole
-                                    experience stress-free. Highly recommend!</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="mil-review-frame mil-tac"
-                                data-swiper-parallax="-600"
-                                data-swiper-parallax-opacity="0"
-                                data-swiper-parallax-scale=".6">
-                                <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">Ashley freeman</h5>
-                                <p class="mil-m-1 mil-up-text mil-up mil-mb-40">Envato market</p>
-                                <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
-                                    <i>"</i>
-                                </div>
-                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">Cleandy is hands down the best cleaning company I’ve ever used! They’re
-                                    incredibly professional and easy to work with. The staff goes above and beyond to make sure every inch of my home is
-                                    perfectly clean. Their flexible scheduling is a lifesaver, and the results speak for themselves – my house has never
-                                    felt so clean and fresh. I’m so happy I found them!"</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="mil-review-frame mil-tac"
-                                data-swiper-parallax="-600"
-                                data-swiper-parallax-opacity="0"
-                                data-swiper-parallax-scale=".6">
-                                <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">Andrew Oldman</h5>
-                                <p class="mil-m-1 mil-up-text mil-up mil-mb-40">Envato market</p>
-                                <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
-                                    <i>"</i>
-                                </div>
-                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">I’ve been using Cleandy for my home cleaning needs for over six months
-                                    now, and I couldn’t be more satisfied. Their team is always punctual, professional, and friendly. The attention to
-                                    detail is fantastic, and my apartment has never looked better. I especially love how fresh and organized everything
-                                    feels after they’re done. I highly recommend Cleandy for anyone looking for reliable cleaning services!</p>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div
-                                class="mil-review-frame mil-tac"
-                                data-swiper-parallax="-600"
-                                data-swiper-parallax-opacity="0"
-                                data-swiper-parallax-scale=".6">
-                                <h5 class="mil-fs-28 mil-m-1 mil-up mil-mb-15">Oscar Trueman</h5>
-                                <p class="mil-m-1 mil-up-text mil-up mil-mb-40">Envato market</p>
-                                <div class="mil-fs-72 mil-a-2 mil-lh-100 mil-up" style="transform: translateX(-1rem)">
-                                    <i>"</i>
-                                </div>
-                                <p class="mil-fs-22 mil-m-1 mil-lh-200 mil-up">Cleandy provided an exceptional deep cleaning service for my office. The
-                                    cleaners were thorough and left no corner untouched. It’s refreshing to see such dedication to their work, and they used
-                                    high-quality, eco-friendly products, which was a big plus for us. Our office now looks spotless, and we will definitely
-                                    be using Cleandy on a regular basis!</p>
-                            </div>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
                 <div class="mil-aic mil-jcc mil-up">

@@ -380,28 +380,31 @@ hero cards
 
   & li {
     width: 6rem;
-    height: 7rem;
+    height: 6rem;
     list-style-type: none;
 
     & img {
       border-radius: 50%;
-      width: 7rem;
-      height: 7rem;
-      border: solid 0.4rem variables.$a-2;
+      width: 100%;
+      // border: solid 0.5rem variables.$a-2;
+      // border: solid 0.5rem red;
+      aspect-ratio: 1/1;
+      object-fit: contain;
+      outline: solid 0.5rem variables.$a-2;
     }
   }
 
   &.mil-sm {
     & li {
       width: 4rem;
-      height: 5rem;
+      height: 4rem;
       list-style-type: none;
 
       & img {
         border-radius: 50%;
         width: 5rem;
         height: 5rem;
-        border: solid 0.4rem variables.$a-2;
+        border: solid 2px variables.$a-1;
       }
     }
   }

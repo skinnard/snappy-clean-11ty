@@ -19,13 +19,13 @@ Minimal 11ty starter project that build css with tailwindcss cli and [esbuild](h
 ## Install
 
 ```
-npm install
+yarn
 ```
 
 ## Local dev
 
 ```
-npm run start
+yarm start
 ```
 
 ## Build
@@ -33,7 +33,7 @@ npm run start
 Minified production build
 
 ```
-npm run build
+yarn build
 ```
 
 ## Assets versioning
