@@ -386,8 +386,6 @@ hero cards
     & img {
       border-radius: 50%;
       width: 100%;
-      // border: solid 0.5rem variables.$a-2;
-      // border: solid 0.5rem red;
       aspect-ratio: 1/1;
       object-fit: contain;
       outline: solid 0.5rem variables.$a-2;
@@ -396,7 +394,7 @@ hero cards
 
   &.mil-sm {
     & li {
-      width: 4rem;
+      width: 5rem;
       height: 4rem;
       list-style-type: none;
 
@@ -404,15 +402,23 @@ hero cards
         border-radius: 50%;
         width: 5rem;
         height: 5rem;
-        border: solid 2px variables.$a-1;
+        outline: solid 2px variables.$a-2;
       }
     }
   }
 
   &.mil-dark-border {
     & li {
+      width: 5rem;
+      height: 4rem;
+
       & img {
-        border: solid 0.4rem variables.$m-1;
+        border-radius: 50%;
+        width: 100%;
+        aspect-ratio: 1/1;
+        object-fit: contain;
+        outline: solid 0.5rem variables.$m-1;
+        border: none;
       }
     }
   }
