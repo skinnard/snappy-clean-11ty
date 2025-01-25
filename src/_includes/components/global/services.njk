@@ -1,96 +1,33 @@
 <!-- services -->
-<div class="mil-p-0-15" id="scroll">
+<div class="mil-p-f-15" id="scroll">
     <div class="container">
         <div class="mil-section-title mil-mb-f mil-up">
             <h2 class="mil-fs-36">Basic services</h2>
             <div class="mil-dots"></div>
             <b class="mil-fs-24">01</b>
         </div>
-        <div class="row">
-            <div class="col-md-6 mil-mb-15 mil-up">
-                <a href="service-2.html" class="mil-service-card mil-bg-m-4 mil-br-md">
-                    <div class="row">
-                        <div class="col-sm-5 mil-column mil-jcb mil-sm-mb-40">
-                            <h3 class="mil-fs-30 mil-mb-30 mil-lh-110">Apartment <br class="mil-sm-hidden">cleaning</h3>
-                            <div>
-                                <div class="mil-btn mil-sm mil-bg-m-3 mil-br-xl mil-hover-bri-105 mil-hover-scale">Learn more</div>
+        <div class="grid grid-cols-2 gap-5">
+            {% for service in services %}
+                <div class="mil-up">
+                    <a href="{{ service.link }}" class="mil-service-card mil-bg-m-4 mil-br-md h-full">
+                        <div class="row">
+                            <div class="col-sm-5 mil-column mil-jcb mil-sm-mb-40">
+                                <h3 class="mil-fs-30 mil-mb-30 mil-lh-110">{{ service.name }}</h3>
+                                <div>
+                                    <div class="mil-btn mil-sm mil-bg-m-3 mil-br-xl mil-hover-bri-105 mil-hover-scale">Learn more</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <ul class="mil-check-list">
+                                    {% for point in service.points %}
+                                        <li>{{ point }}</li>
+                                    {% endfor %}
+                                </ul>
                             </div>
                         </div>
-                        <div class="col-sm-7">
-                            <ul class="mil-check-list">
-                                <li>Dust all surfaces</li>
-                                <li>Mop floors</li>
-                                <li>Clean kitchen surfaces</li>
-                                <li>Disinfect bathroom and toilet</li>
-                                <li>Take out trash</li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 mil-mb-15 mil-up">
-                <a href="service-2.html" class="mil-service-card mil-bg-m-4 mil-br-md">
-                    <div class="row">
-                        <div class="col-sm-5 mil-column mil-jcb mil-sm-mb-40">
-                            <h3 class="mil-fs-30 mil-mb-30 mil-lh-110">Home <br class="mil-sm-hidden">cleaning</h3>
-                            <div>
-                                <div class="mil-btn mil-sm mil-bg-m-3 mil-br-xl mil-hover-bri-105 mil-hover-scale">Learn more</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <ul class="mil-check-list">
-                                <li>Dust all surfaces</li>
-                                <li>Mop floors</li>
-                                <li>Clean kitchen surfaces</li>
-                                <li>Disinfect bathroom and toilet</li>
-                                <li>Take out trash</li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 mil-mb-15 mil-up">
-                <a href="service-2.html" class="mil-service-card mil-bg-m-4 mil-br-md">
-                    <div class="row">
-                        <div class="col-sm-5 mil-column mil-jcb mil-sm-mb-40">
-                            <h3 class="mil-fs-30 mil-mb-30 mil-lh-110">Office <br class="mil-sm-hidden">cleaning</h3>
-                            <div>
-                                <div class="mil-btn mil-sm mil-bg-m-3 mil-br-xl mil-hover-bri-105 mil-hover-scale">Learn more</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <ul class="mil-check-list">
-                                <li>Disinfect desks and phones</li>
-                                <li>Mop floors</li>
-                                <li>Polish glass surfaces</li>
-                                <li>Disinfect restrooms</li>
-                                <li>Take out trash</li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-md-6 mil-mb-15 mil-up">
-                <a href="service-2.html" class="mil-service-card mil-bg-m-4 mil-br-md">
-                    <div class="row">
-                        <div class="col-sm-5 mil-column mil-jcb mil-sm-mb-40">
-                            <h3 class="mil-fs-30 mil-mb-30 mil-lh-110">Specialized <br class="mil-sm-hidden">cleaning</h3>
-                            <div>
-                                <div class="mil-btn mil-sm mil-bg-m-3 mil-br-xl mil-hover-bri-105 mil-hover-scale">Learn more</div>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <ul class="mil-check-list">
-                                <li>Warehouse Cleaning</li>
-                                <li>Abandoned Property Cleaning</li>
-                                <li>Outdoor Area Cleaning</li>
-                                <li>High-Level Dusting</li>
-                                <li>Industrial Cleaning</li>
-                            </ul>
-                        </div>
-                    </div>
-                </a>
-            </div>
+                    </a>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </div>
