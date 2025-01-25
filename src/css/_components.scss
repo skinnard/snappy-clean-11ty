@@ -2367,18 +2367,6 @@ steps
   transition: variables.$t-md;
   position: relative;
 
-  &.mil-step-line {
-    &:before {
-      content: "";
-      width: 1.5rem;
-      height: 1.5rem;
-      background-color: variables.$m-4;
-      position: absolute;
-      top: 6.2rem;
-      right: -1.5rem;
-    }
-  }
-
   @media screen and (max-width: 992px) {
     &.mil-step-line {
       &:before {
