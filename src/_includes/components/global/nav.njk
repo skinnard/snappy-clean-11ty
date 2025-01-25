@@ -14,6 +14,8 @@
                         <ul>
                             <li><a href="/services/residential-cleaning">Residential Cleaning</a></li>
                             <li><a href="/services/commercial-cleaning">Commercial Cleaning</a></li>
+                            <li><a href="/services/post-construction-cleaning">Post Construction Cleaning</a></li>
+                            <li><a href="/services/carpet-cleaning">Carpet Cleaning</a></li>
                             <li><a href="/services/subscription">Subscription</a></li>
                             <li><a href="/quote">{{ data.quoteText }}</a></li>
                         </ul>
@@ -21,13 +23,11 @@
                     <li class="mil-has-children">
                         <a href="#">Service Ares</a>
                         <ul>
-                            <li><a href="/service-areas/kitchener-waterloo">Kitchener/Waterloo</a></li>
+                            <li><a href="/service-areas/kitchener">Kitchener</a></li>
+                            <li><a href="/service-areas/waterloo">Waterloo</a></li>
                             <li><a href="/service-areas/guelph">Guelph</a></li>
                             <li><a href="/service-areas/cambridge">Cambridge</a></li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="/services/quote">{{ data.quoteText }}</a>
                     </li>
                     <li>
                         <a href="/contact">Contact</a>
@@ -37,7 +37,7 @@
             <div class="mil-right mil-jce">
                 <div class="mil-tp-phone mil-aic mil-mr-60 mil-sm-mr-15">
                     <i class="far fa-mobile mil-icon mil-sm mil-bg-a-2 mil-m-4 mil-mr-15 mil-sm-hidden" style="padding-top: .2rem"></i>
-                    <a href="tel:+380123456789" class="mil-fw-600" data-no-swup>+1 (049) 129-45X7</a>
+                    <a href="tel:+{{data.phoneNoSpaces}}" class="mil-fw-600" data-no-swup>{{ data.phone }}</a>
                 </div>
                 <a
                     href="/services/quote"

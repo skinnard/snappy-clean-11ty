@@ -1,0 +1,26 @@
+[
+  {
+    "icon": "clock.png",
+    "text": "Saves<br />Time"
+  },
+  {
+    "icon": "award.png",
+    "text": "Top Notch<br />Cleaners"
+  },
+  {
+    "icon": "cards.png",
+    "text": "Cash-Free<br />Payments"
+  },
+  {
+    "icon": "calendar.png",
+    "text": "Effortless<br />Rescheduling"
+  },
+  {
+    "icon": "heart.png",
+    "text": "Health &amp;<br />Safety First"
+  },
+  {
+    "icon": "service.png",
+    "text": "Incredible Customer<br />Service"
+  }
+]

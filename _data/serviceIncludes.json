@@ -1,0 +1,123 @@
+{
+    "residential": [
+      {
+        "title": "Initial Assessment",
+        "description": "Inspecting the apartment and discussing specific cleaning needs with the client."
+      },
+      {
+        "title": "Planning and Preparation",
+        "description": "Choosing appropriate cleaning products and gathering necessary equipment."
+      },
+      {
+        "title": "Decluttering and Organizing",
+        "description": "Removing clutter and organizing areas to create a clean and tidy space."
+      },
+      {
+        "title": "Dusting and Surface Cleaning",
+        "description": "Dusting furniture, wiping down surfaces, and cleaning all accessible areas."
+      },
+      {
+        "title": "Deep Cleaning Floors and Carpets",
+        "description": "Vacuuming, mopping floors, and spot-cleaning carpets and rugs."
+      },
+      {
+        "title": "Bathroom and Kitchen Sanitization",
+        "description": "Thoroughly cleaning sinks, counters, and sanitizing high-touch areas."
+      },
+      {
+        "title": "Final Quality Check and Client Approval",
+        "description": "Reviewing the apartment for quality assurance and presenting it to the client."
+      }
+    ],
+    "commercial": [
+      {
+        "title": "Initial Assessment",
+        "description": "Inspecting the apartment and discussing specific cleaning needs with the client."
+      },
+      {
+        "title": "Planning and Preparation",
+        "description": "Choosing appropriate cleaning products and gathering necessary equipment."
+      },
+      {
+        "title": "Decluttering and Organizing",
+        "description": "Removing clutter and organizing areas to create a clean and tidy space."
+      },
+      {
+        "title": "Dusting and Surface Cleaning",
+        "description": "Dusting furniture, wiping down surfaces, and cleaning all accessible areas."
+      },
+      {
+        "title": "Deep Cleaning Floors and Carpets",
+        "description": "Vacuuming, mopping floors, and spot-cleaning carpets and rugs."
+      },
+      {
+        "title": "Bathroom and Kitchen Sanitization",
+        "description": "Thoroughly cleaning sinks, counters, and sanitizing high-touch areas."
+      },
+      {
+        "title": "Final Quality Check and Client Approval",
+        "description": "Reviewing the apartment for quality assurance and presenting it to the client."
+      }
+    ],
+    "construction": [
+      {
+        "title": "Initial Assessment",
+        "description": "Inspecting the apartment and discussing specific cleaning needs with the client."
+      },
+      {
+        "title": "Planning and Preparation",
+        "description": "Choosing appropriate cleaning products and gathering necessary equipment."
+      },
+      {
+        "title": "Decluttering and Organizing",
+        "description": "Removing clutter and organizing areas to create a clean and tidy space."
+      },
+      {
+        "title": "Dusting and Surface Cleaning",
+        "description": "Dusting furniture, wiping down surfaces, and cleaning all accessible areas."
+      },
+      {
+        "title": "Deep Cleaning Floors and Carpets",
+        "description": "Vacuuming, mopping floors, and spot-cleaning carpets and rugs."
+      },
+      {
+        "title": "Bathroom and Kitchen Sanitization",
+        "description": "Thoroughly cleaning sinks, counters, and sanitizing high-touch areas."
+      },
+      {
+        "title": "Final Quality Check and Client Approval",
+        "description": "Reviewing the apartment for quality assurance and presenting it to the client."
+      }
+    ],
+    "carpet": [
+      {
+        "title": "Initial Assessment",
+        "description": "Inspecting the apartment and discussing specific cleaning needs with the client."
+      },
+      {
+        "title": "Planning and Preparation",
+        "description": "Choosing appropriate cleaning products and gathering necessary equipment."
+      },
+      {
+        "title": "Decluttering and Organizing",
+        "description": "Removing clutter and organizing areas to create a clean and tidy space."
+      },
+      {
+        "title": "Dusting and Surface Cleaning",
+        "description": "Dusting furniture, wiping down surfaces, and cleaning all accessible areas."
+      },
+      {
+        "title": "Deep Cleaning Floors and Carpets",
+        "description": "Vacuuming, mopping floors, and spot-cleaning carpets and rugs."
+      },
+      {
+        "title": "Bathroom and Kitchen Sanitization",
+        "description": "Thoroughly cleaning sinks, counters, and sanitizing high-touch areas."
+      },
+      {
+        "title": "Final Quality Check and Client Approval",
+        "description": "Reviewing the apartment for quality assurance and presenting it to the client."
+      }
+    ]
+  }
+  

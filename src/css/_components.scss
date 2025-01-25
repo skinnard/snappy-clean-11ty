@@ -2345,14 +2345,7 @@ features
 ------------------------------------------- */
 
 .mil-features {
-  padding: 6rem;
-  padding-bottom: 0;
-  display: block;
   transition: variables.$t-md;
-
-  & .mil-card-icon {
-    width: 60px;
-  }
 }
 
 /* -------------------------------------------
