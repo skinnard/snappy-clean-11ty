@@ -1,46 +1,46 @@
 [
   {
-    "name": "Residential Cleaning",
-    "link": "services/residential-cleaning",
-    "description": "Let's make time for the rest of your busy life. We offer Deep Cleaning, Move-In/Out, Standard, Construction and Monthly cleaning packages with top home cleaning professionals.",
+    "name": "Deep Cleaning (1st Clean)",
+    "link": "services/deep-clean",
+    "description": "Our deep cleaning removes hidden dirt and grime, leaving your home spotless and refreshed. Perfect for seasonal cleans or a fresh start!",
     "points": [
-      "Deep Cleaning (1st Clean)",
-      "Standard Cleaning",
-      "Monthly Premium Clean",
-      "Move In/Out Cleaning"
+      "For that extra shine",
+      "Top to bottom cleaning",
+      "All surfaces and appliances",
+      "Hard to reach areas"
     ]
   },
   {
-    "name": "Commercial Cleaning",
-    "link": "services/commercial-cleaning",
-    "description": "We also clean offices and any type of commercial space. We offer Deep Cleaning, Move-In/Out, Standard and Monthly cleaning packages with our top home cleaning professionals.",
+    "name": "Standard Cleaning",
+    "link": "services/standard-cleaning",
+    "description": "Our standard cleaning keeps your home fresh and tidy with routine dusting, vacuuming, and surface wiping. It’s the perfect way to maintain a clean, comfortable space without the hassle!",
     "points": [
-      "Office cleaning",
-      "Condo/apartment cleaning",
-      "Facility cleaning",
-      "Restaurant cleaning"
+      "Weekly or bi-weekly",
+      "Keeps your home consistently clean",
+      "Dusting, vacuuming, and wiping",
+      "Hassle-free cleaning solution"
     ]
   },
   {
-    "name": "Carpet Cleaning",
-    "link": "services/carpet-cleaning",
-    "description": "Looking for professional-grade carpet cleaning? Do you have problem areas in your carpet or considering replacement? We offer Professional-Grade Residential and Commercial Carpet Cleaning Services using the best equipment in the business. ",
+    "name": "Monthly Premium Clean",
+    "link": "services/monthly-premium-clean",
+    "description": "Our monthly premium cleaning provides a thorough, top-to-bottom refresh, tackling dust, grime, and buildup in every corner. Enjoy a consistently pristine home without the effort—just relax and let us handle the deep cleaning!",
     "points": [
-      "Professional-Grade",
-      "Up to 600 psi and 230C",
-      "Industry-leading ROTOVAC",
-      "Dries in about 3 hours"
+      "Like our standard clean, but more thorough",
+      "Cleaning behind and under furniture",
+      "Wiping down baseboards",
+      "Focus on high-touch areas"
     ]
   },
   {
-    "name": "Post-Construction Cleaning",
-    "link": "services/post-construction-cleaning",
-    "description": "Just finished Construction or a Renovation? Move in to a healthy, safe and sparkling new space with our Construction Cleaning!",
+    "name": "Move In/Out Cleaning",
+    "link": "services/move-in-out-cleaning",
+    "description": "Our move-in/out cleaning ensures your old or new home is spotless and ready for the next chapter. We deep clean every corner, removing dust, grime, and buildup, so you can move stress-free and focus on what matters most!",
     "points": [
-      "All floors cleaned",
-      "Surfaces are dusted/wiped",
-      "Appliances cleaned",
-      "Trim, doors, cabinets cleaned"
+      "Deep cleaning of the entire property",
+      "All reachable vertical surfaces",
+      "Attention to areas that are often overlooked",
+      "Guaranteed satisfaction"
     ]
   }
 ]

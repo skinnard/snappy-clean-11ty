@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Kitchen",
+    "content": "<ul><li><p>Clean and sanitize countertops and backsplashes.</p></li><li><p>Clean and disinfect the kitchen sink and faucet.</p></li><li><p>Wipe down the exterior of appliances (microwave, refrigerator, dishwasher, stovetop)</p></li><li><p>Wipe down the exterior of cabinets and drawers.</p></li><li><p>Clean and sanitize the kitchen table and chairs.</p></li><li><p>Wipe down the exterior of any small kitchen appliances (toaster, coffee maker, blender, etc.)</p></li><li><p>Empty trash bins and replace liners.</p></li></ul>"
+  },
+  {
+    "title": "Bathrooms",
+    "content": "<ul><li><p>Clean and sanitize sinks and faucets.</p></li><li><p>Clean and disinfect toilets (including under the rim).</p></li><li><p>Clean mirrors and any glass surfaces.</p></li><li><p>Scrub and sanitize showers and tubs (including walls, faucets, and showerheads).</p></li><li><p>Wipe down and sanitize bathroom counters and shelves.</p></li><li><p>Empty trash bins and replace liners.</p></li><li><p>Wipe down towel bars, soap dishes, and other bathroom accessories.</p></li></ul>"
+  },
+  {
+    "title": "Bedrooms",
+    "content": ""
+  },
+  {
+    "title": "Laundry Room",
+    "content": ""
+  },
+  {
+    "title": "Tidying Up Common Areas",
+    "content": ""
+  },
+  {
+    "title": "Vacuuming and Mopping Floors",
+    "content": ""
+  }
+]
