@@ -1,35 +1,23 @@
 [
     {
-      "title": "How Do I Schedule Online?",
-      "content": "To schedule online, all you have to do is fill out some details about what you need, who you are, pick a date/time and wait for a confirmation to arrive."
+      "title": "Dusting and Wiping Down Surfaces (Extra Detail)",
+      "content": "<ul><li><p>Dust all accessible surfaces, including hard-to-reach areas like ceiling fans and light fixtures.</p></li><li><p>Dust baseboards, window sills, and door frames, with extra attention to high-traffic areas.</p></li><li><p>Clean and polish furniture surfaces.</p></li></ul>"
     },
     {
-      "title": "When Will I Get A Confirmation?",
-      "content": "You will get a confirmation as soon as we find a provider for your job via email, phone or text."
+      "title": "Vacuuming and Mopping Floors (Extra Detail)",
+      "content": "<ul><li><p>Vacuum all carpets and rugs thoroughly, including under furniture (if furniture can be easily moved).</p></li><li><p>Mop floors, focusing on corners, edges, and high-traffic areas (e.g., entryways).</p></li></ul>"
     },
     {
-      "title": "Can I Reschedule My Booking Online?",
-      "content": "Yes, of course. After you book for the first time, an account will be made for you where you can login and modify your bookings at anytime."
+      "title": "Cleaning Bathrooms (Extra Detail)",
+      "content": "<ul><li><p>Scrub grout lines in tiles and around sinks/tubs.</p></li><li><p>Deep clean shower/tub walls and remove soap scum or buildup.</p></li><li><p>Clean light fixtures and vents.</p></li><li><p>Clean behind and around bathroom appliances (e.g., toilets, sinks, showerheads).</p></li><li><p>Wipe down the exterior of bathroom cabinets and handles.</p></li></ul>"
     },
     {
-      "title": "Who Will Be Cleaning My Home?",
-      "content": "Our cleaning providers have gone through a vetting process which includes: background checks, proof of insurance and all providers are trained to our highest standards."
+      "title": "Kitchen Cleaning (Extra Detail)",
+      "content": "<ul><li><p>Scrub tile grout in the kitchen.</p></li><li><p>Clean and polish cabinet exteriors and handles.</p></li><li><p>Wipe down backsplashes and behind appliances.</p></li><li><p>Clean and sanitize the kitchen table and chairs thoroughly.</p></li></ul>"
     },
     {
-      "title": "Cancellation and Rescheduling Policies",
-      "content": "Cancellation Policy: To ensure efficient scheduling and fairness to all our clients, we kindly request a minimum of 48 hours notice for any appointment cancellations or changes. If you provide less than 48 hours notice, a 50% charge of your appointment cost will apply. For cancellations made within 24 hours or in case we cannot access your home, the full appointment cost (100%) will be charged.<br /><br /> Rescheduling Policy: Should you need to reschedule your upcoming cleaning appointment, we kindly ask for a minimum of 48 hours notice. This allows us to make the necessary adjustments to our schedule and ensure smooth service for all our valued clients."
-    },
-    {
-      "title": "Pricing and Payment Methods",
-      "content": "Pricing: Our commitment to transparency means you'll know the cost of your cleaning service upfront, with no surprises. Whether it's a quick touch-up or a deep clean, our flat rate ensures consistent and reliable pricing, giving you peace of mind and the freedom to focus on what matters most.<br /><br />Add-on Services: Additional services such as heavy-duty cleaning, pet hair removal, paint removal, cleaning inside the fridge or oven, among others, are available at an extra charge. Please inform us in advance if you wish to add any of these services to your booking.<br /><br />Payment Method Available: Payments can be made by credit card or E-transfer. Credit cards will not be charged until after the appointment is completed. To secure reservations by E-transfer, payments must be paid 50% on the date of the booking & 50% on completion of the job."
-    },
-    {
-      "title": "Refund Policy",
-      "content": "At Happy Life Cleaning LTD., our goal is to deliver the highest level of service to our valued clients. As part of our commitment to excellence, we do not offer refunds. However, should any issues arise, please reach out to us within 24 hours, and we will promptly correct any errors at no additional charge. Your satisfaction is our priority, and we're here to ensure you receive the best service possible."
-    },
-    {
-      "title": "100% Satisfaction Guarantee Policy",
-      "content": "To cater to your specific requirements, we start with a comprehensive walkthrough at the beginning of the cleaning session. This walkthrough allows you to highlight any areas you'd like our cleaners to focus on. Once the cleaning is done, we conduct a final walkthrough, seeking your valuable feedback to continuously enhance our services and achieve the best possible results.<br /><br />In the unlikely event that we miss something or you're not satisfied with the results, simply inform us within 24 hours, and we'll send our cleaners back to fix it, completely free of charge. "
+      "title": "Tidying Up Common Areas (Extra Detail)",
+      "content": "<ul><li><p>Clean and sanitize high-touch areas like doorknobs, light switches, and remote controls.</p></li><li><p>Organize and straighten common areas (e.g., arrange books, magazines, or decorative items).</p></li><li><p>Clean behind and under larger furniture pieces (e.g., sofas, chairs) if they can be safely moved.</p></li></ul>"
     }
   ]
 

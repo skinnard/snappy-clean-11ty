@@ -14,7 +14,7 @@
         <div class="row mil-mb-60">
             <div class="col-lg-6">
                 {% for item in monthlyPremiumCleanFaq %}
-                    {% if (loop.index <= 4) %}
+                    {% if (loop.index <= 3) %}
                         <div class="mil-mb-15 mil-up">
                             <button class="mil-accordion mil-fw-600 mil-fs-20">{{ item.title }}<span class="mil-icon mil-sm mil-bg-m-3">+</span>
                             </button>
@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-6">
                 {% for item in monthlyPremiumCleanFaq %}
-                    {% if (loop.index >= 5) %}
+                    {% if (loop.index >= 4) %}
                         <div class="mil-mb-15 mil-up">
                             <button class="mil-accordion mil-fw-600 mil-fs-20">{{ item.title }}<span class="mil-icon mil-sm mil-bg-m-3">+</span>
                             </button>
