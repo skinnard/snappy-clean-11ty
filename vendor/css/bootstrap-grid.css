@@ -36,7 +36,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
 
     .container-lg,
     .container-md,
@@ -737,7 +737,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
     .col-lg {
         flex: 1 0 0%;
     }

@@ -135,7 +135,7 @@ hero 2
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     height: auto;
   }
 
@@ -209,7 +209,7 @@ hero 3
     height: auto;
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     padding-top: variables.$space;
   }
 
@@ -272,7 +272,7 @@ hero 4
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     height: auto;
   }
 }
@@ -339,7 +339,7 @@ hero 5
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     height: auto;
   }
 
@@ -619,7 +619,7 @@ inner page hero
   padding-top: variables.$space * 2 + 9rem;
   padding-bottom: variables.$space;
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     padding-top: variables.$space * 2;
     padding-bottom: 4rem;
   }

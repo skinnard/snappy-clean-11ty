@@ -184,7 +184,7 @@ top panel
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     height: variables.$space !important;
     background-color: variables.$m-4;
     border-bottom: solid 0.1rem rgba(variables.$m-2, 0.2);
@@ -239,7 +239,7 @@ top panel
       }
     }
 
-    @media (max-width: 992px) {
+    @media (max-width: 1024px) {
       background-color: variables.$m-4;
 
       & .mil-logo {
@@ -319,13 +319,9 @@ main menu
         font-weight: 600;
         font-size: 1.4rem;
         white-space: nowrap;
-        display: flex;
-        align-items: center;
-        height: 100%;
         color: variables.$m-1;
-        line-height: 100%;
-        padding-left: 2rem;
-        transition: variables.$t-sm;
+        display: block;
+        margin: 3rem 0;
       }
 
       & a {
@@ -573,7 +569,7 @@ main menu
         }
       }
 
-      @media (max-width: 992px) {
+      @media (max-width: 1024px) {
         & ul {
           & li {
             & a {
@@ -669,7 +665,7 @@ munu button
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     display: flex;
   }
 
@@ -711,7 +707,7 @@ forms
     border: solid 0.1rem rgba(variables.$m-3, 0.05);
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     padding: 5rem 3rem 3rem;
     position: static !important;
   }
@@ -1166,7 +1162,7 @@ reviews
     width: 100%;
     justify-content: space-between;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       top: 0;
     }
   }
@@ -1528,7 +1524,7 @@ right side buttons
     }
   }
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     bottom: 1.5rem;
     right: 1.5rem;
     width: 100%;
@@ -2376,7 +2372,7 @@ steps
   transition: variables.$t-md;
   position: relative;
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     &.mil-step-line {
       &:before {
         display: none;

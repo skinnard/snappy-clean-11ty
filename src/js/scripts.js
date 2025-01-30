@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
   //     let preloaderInterval = setInterval(updatePreloader, 100);
   //   };
 
-  //   // Додаємо затримку в пів секунди перед запуском initPreloader
   //   setTimeout(initPreloader, 500);
   /* -------------------------------------------
     
@@ -226,7 +225,7 @@ document.addEventListener("DOMContentLoaded", function () {
           768: {
             slidesPerView: 4,
           },
-          992: {
+          1024: {
             slidesPerView: 7,
           },
         },
@@ -448,8 +447,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const callPopupButtons = document.querySelectorAll(".mil-call-popup");
     const closePopupButton = document.querySelector(".mil-close-popup");
     const discountPopup = document.querySelector(".mil-discount-popup");
-
-    console.log("callPopupButtons: ", callPopupButtons);
 
     if (callPopupButtons && discountPopup) {
       callPopupButtons.forEach((button) => {
