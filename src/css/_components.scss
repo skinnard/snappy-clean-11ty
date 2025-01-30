@@ -413,7 +413,7 @@ main menu
     }
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1024px) {
     box-shadow: variables.$shadow;
     border-radius: 0 0 variables.$angle variables.$angle;
     height: auto;
@@ -2045,7 +2045,8 @@ calculator
 
 ------------------------------------------- */
 
-.mil-calculator {
+.mil-calculator,
+.mil-hero-form-frame {
   & .mil-custom-select {
     width: 100%;
     height: 9rem;
