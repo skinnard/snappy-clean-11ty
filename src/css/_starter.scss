@@ -140,7 +140,7 @@ html {
     font-size: 7px;
   }
 
-  // @media (max-width: 1024px) {
+  // @media (max-width: 992px) {
   //   font-size: 7px;
   // }
 }
@@ -365,7 +365,7 @@ flex
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .mil-md-flex {
     display: flex !important;
   }
@@ -602,7 +602,7 @@ spaces
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .mil-md-p-ff {
     padding-top: variables.$space;
     padding-bottom: variables.$space;
@@ -984,7 +984,7 @@ margins
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   // margin-top
 
   .mil-md-mt-0 {
@@ -1299,7 +1299,7 @@ text align
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .mil-md-tal {
     text-align: left;
   }
@@ -1581,7 +1581,7 @@ body {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .mil-md-fs-11 {
     font-size: 1.1rem;
   }

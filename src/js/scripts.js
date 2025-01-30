@@ -1,3 +1,12 @@
+const options = {
+  containers: ["#swupMain"],
+  animateHistoryBrowsing: true,
+  linkSelector: 'a:not([data-no-swup]):not([href^="#"])',
+  plugins: [new SwupBodyClassPlugin()],
+};
+
+const swup = new Swup(options);
+
 document.addEventListener("DOMContentLoaded", function () {
   "use strict";
 
@@ -38,14 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
     page transitions
     
     ------------------------------------------- */
-  const options = {
-    containers: ["#swupMain", "#swupMenu"],
-    animateHistoryBrowsing: true,
-    linkSelector: 'a:not([data-no-swup]):not([href^="#"])',
-    plugins: [new SwupBodyClassPlugin()],
-  };
-
-  const swup = new Swup(options);
 
   /* -------------------------------------------
     
@@ -98,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (menuBtn && mainMenu) {
         menuBtn.classList.remove("mil-active");
         mainMenu.classList.remove("mil-active");
+        console.log("clickd");
       }
     });
   });
@@ -673,15 +675,27 @@ document.addEventListener("DOMContentLoaded", function () {
         ------------------------------------------- */
     const menuBtn = document.querySelector(".mil-menu-btn");
     const mainMenu = document.querySelector(".mil-main-menu");
-    const menuLinks = document.querySelectorAll(".mil-main-menu a");
+    const menuLinks = document.querySelectorAll(".mil-main-menu .menu-link");
 
-    function toggleMenu() {
-      menuBtn.classList.toggle("mil-active");
-      mainMenu.classList.toggle("mil-active");
+    function toggleMenu(link) {
+      // menuBtn.classList.toggle("mil-active");
+      // mainMenu.classList.toggle("mil-active");
+      console.log("clicked 2");
+      console.log("this: ", this);
+
+      console.log('link: ', link);
+
+      if (link !== this) {
+        link.closest(".menu-item-wrapper").classList.remove("mil-active");
+        link.closest(".menu-item-wrapper").style.border = "none";
+      }
+
+      this.closest(".menu-item-wrapper").classList.add("mil-active");
+      this.closest(".menu-item-wrapper").style.border = "1px solid red";
     }
 
     menuLinks.forEach((link) => {
-      link.addEventListener("click", toggleMenu);
+      link.addEventListener("click", toggleMenu(link));
     });
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
