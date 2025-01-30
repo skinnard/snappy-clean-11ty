@@ -7,35 +7,35 @@
                     <img src="/img/ui/logo-light.png" alt="logo" class="mil-light">
                 </a>
             </div>
-            <nav class="mil-main-menu">
+            <nav class="mil-main-menu" id="mainMenu">
                 <ul id="swupMenu" class="mil-menu-transition mil-aic mil-m-4">
-                    <li class="mil-has-children mil-current">
-                        <a href="/services">Services</a>
+                    <li class="mil-has-children mil-current menu-item-wrapper">
+                        <a class="menu-title menu-link" href="/services">Services</a>
                         <ul>
-                            <li><a href="/services/deep-clean">Deep Cleaning (1st Clean)</a></li>
-                            <li><a href="/services/standard-cleaning">Standard Cleaning</a></li>
-                            <li><a href="/services/monthly-premium-clean">Monthly Premium Clean</a></li>
-                            <li><a href="/services/move-in-out-cleaning">Move In/Out Cleaning</a></li>
+                            <li><a class="menu-link menu-link-child" href="/services/deep-clean">Deep Cleaning (1st Clean)</a></li>
+                            <li><a class="menu-link menu-link-child" href="/services/standard-cleaning">Standard Cleaning</a></li>
+                            <li><a class="menu-link menu-link-child" href="/services/monthly-premium-clean">Monthly Premium Clean</a></li>
+                            <li><a class="menu-link menu-link-child" href="/services/move-in-out-cleaning">Move In/Out Cleaning</a></li>
                         </ul>
                     </li>
-                    <li class="mil-has-children">
-                        <a href="#">Service Ares</a>
+                    <li class="mil-has-children menu-item-wrapper">
+                        <span class="menu-title">Service Ares</span>
                         <ul>
-                            <li><a href="/service-areas/kitchener">Kitchener</a></li>
-                            <li><a href="/service-areas/waterloo">Waterloo</a></li>
-                            <li><a href="/service-areas/guelph">Guelph</a></li>
-                            <li><a href="/service-areas/cambridge">Cambridge</a></li>
+                            <li><a class="menu-link menu-link-child" href="/service-areas/kitchener">Kitchener</a></li>
+                            <li><a class="menu-link menu-link-child" href="/service-areas/waterloo">Waterloo</a></li>
+                            <li><a class="menu-link menu-link-child" href="/service-areas/guelph">Guelph</a></li>
+                            <li><a class="menu-link menu-link-child" href="/service-areas/cambridge">Cambridge</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="/contact">Contact</a>
+                    <li class="menu-item-wrapper">
+                        <a class="menu-link" class="menu-title" href="/contact">Contact</a>
                     </li>
                 </ul>
             </nav>
             <div class="mil-right mil-jce">
                 <div class="mil-tp-phone mil-aic mil-mr-60 mil-sm-mr-15">
                     <i class="far fa-mobile mil-icon mil-sm mil-bg-a-2 mil-m-4 mil-mr-15 mil-sm-hidden" style="padding-top: .2rem"></i>
-                    <a href="tel:+{{data.phoneNoSpaces}}" class="mil-fw-600" data-no-swup>{{ data.phone }}</a>
+                    <a href="tel:{{data.phoneNoSpaces}}" class="mil-fw-600" data-no-swup>{{ data.phone }}</a>
                 </div>
                 <a
                     href="/services/quote"
