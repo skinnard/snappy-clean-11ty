@@ -677,25 +677,37 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainMenu = document.querySelector(".mil-main-menu");
     const menuLinks = document.querySelectorAll(".mil-main-menu .menu-link");
 
-    function toggleMenu(link) {
-      // menuBtn.classList.toggle("mil-active");
-      // mainMenu.classList.toggle("mil-active");
-      console.log("clicked 2");
-      console.log("this: ", this);
+    // function toggleMenu(link) {
+    //   // menuBtn.classList.toggle("mil-active");
+    //   // mainMenu.classList.toggle("mil-active");
+    //   console.log("clicked 2");
+    //   console.log("this: ", this);
 
-      console.log('link: ', link);
+    //   console.log('link: ', link);
 
-      if (link !== this) {
-        link.closest(".menu-item-wrapper").classList.remove("mil-active");
-        link.closest(".menu-item-wrapper").style.border = "none";
-      }
+    //   if (link !== this) {
+    //     link.closest(".menu-item-wrapper").classList.remove("mil-active");
+    //     link.closest(".menu-item-wrapper").style.border = "none";
+    //   }
 
-      this.closest(".menu-item-wrapper").classList.add("mil-active");
-      this.closest(".menu-item-wrapper").style.border = "1px solid red";
+    //   this.closest(".menu-item-wrapper").classList.add("mil-active");
+    //   this.closest(".menu-item-wrapper").style.border = "1px solid red";
+    // }
+
+    function toggleMenu() {
+      // Remove "mil-active" class from all parents
+      menuLinks.forEach((link) => {
+        if (link !== this) {
+          link.closest('.menu-item-wrapper').classList.remove("mil-active");
+        }
+      });
+  
+      // Add "mil-active" class to the clicked link's parent
+      this.closest('.menu-item-wrapper').classList.add("mil-active");
     }
 
     menuLinks.forEach((link) => {
-      link.addEventListener("click", toggleMenu(link));
+      link.addEventListener("click", toggleMenu);
     });
 
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
