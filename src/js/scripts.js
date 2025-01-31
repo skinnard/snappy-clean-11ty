@@ -15,41 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   /* -------------------------------------------
     
-    preloader
-    
-    ------------------------------------------- */
-
-  //   const initPreloader = () => {
-  //     let preloaderPercent = document.querySelector(".mil-percent");
-  //     let preloaderLine = document.querySelector(".mil-preload-line");
-  //     let preloader = document.querySelector(".mil-preloader-frame");
-  //     let progress = 0;
-
-  //     function updatePreloader() {
-  //       if (progress <= 100) {
-  //         preloaderPercent.textContent = progress;
-  //         preloaderLine.style.width = progress + "%";
-  //         progress += 10;
-  //       } else {
-  //         clearInterval(preloaderInterval);
-  //         setTimeout(() => {
-  //           preloader.classList.add("mil-complete");
-  //         }, 500); // Затримка в пів секунди перед додаванням класу
-  //       }
-  //     }
-
-  //     let preloaderInterval = setInterval(updatePreloader, 100);
-  //   };
-
-  //   setTimeout(initPreloader, 500);
-  /* -------------------------------------------
-    
-    page transitions
-    
-    ------------------------------------------- */
-
-  /* -------------------------------------------
-    
     smooth scroll
     
     ------------------------------------------- */
@@ -134,6 +99,30 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  const services = document.querySelector(".menu-item-wrapper.services");
+  const serviceAreas = document.querySelector(
+    ".menu-item-wrapper.service-areas"
+  );
+  const contact = document.querySelector(".menu-item-wrapper.contact");
+
+  if (window.location.href.indexOf("services") > -1) {
+    services.classList.add("mil-current");
+    serviceAreas.classList.remove("mil-current");
+    contact.classList.remove("mil-current");
+  } else if (window.location.href.indexOf("service-areas") > -1) {
+    serviceAreas.classList.add("mil-current");
+    services.classList.remove("mil-current");
+    contact.classList.remove("mil-current");
+  } else if (window.location.href.indexOf("contact") > -1) {
+    contact.classList.add("mil-current");
+    serviceAreas.classList.remove("mil-current");
+    services.classList.remove("mil-current");
+  } else {
+    contact.classList.remove("mil-current");
+    serviceAreas.classList.remove("mil-current");
+    services.classList.remove("mil-current");
+  }
 
   /* -------------------------------------------
     
@@ -656,6 +645,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
   snappyMap && initMap();
 
+  console.log("window.location.href: ", window.location.href);
+
   /*----------------------------------------------------------
     ------------------------------------------------------------
 
@@ -677,33 +668,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainMenu = document.querySelector(".mil-main-menu");
     const menuLinks = document.querySelectorAll(".mil-main-menu .menu-link");
 
-    // function toggleMenu(link) {
-    //   // menuBtn.classList.toggle("mil-active");
-    //   // mainMenu.classList.toggle("mil-active");
-    //   console.log("clicked 2");
-    //   console.log("this: ", this);
-
-    //   console.log('link: ', link);
-
-    //   if (link !== this) {
-    //     link.closest(".menu-item-wrapper").classList.remove("mil-active");
-    //     link.closest(".menu-item-wrapper").style.border = "none";
-    //   }
-
-    //   this.closest(".menu-item-wrapper").classList.add("mil-active");
-    //   this.closest(".menu-item-wrapper").style.border = "1px solid red";
-    // }
+    function toggleMenu(link) {
+      menuBtn.classList.toggle("mil-active");
+      mainMenu.classList.toggle("mil-active");
+    }
 
     function toggleMenu() {
-      // Remove "mil-active" class from all parents
       menuLinks.forEach((link) => {
         if (link !== this) {
-          link.closest('.menu-item-wrapper').classList.remove("mil-active");
+          link.closest(".menu-item-wrapper").classList.remove("mil-current");
         }
       });
-  
-      // Add "mil-active" class to the clicked link's parent
-      this.closest('.menu-item-wrapper').classList.add("mil-active");
+      this.closest(".menu-item-wrapper").classList.add("mil-current");
     }
 
     menuLinks.forEach((link) => {
@@ -729,6 +705,106 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
     });
+
+    const services = document.querySelector(".menu-item-wrapper.services");
+    const serviceAreas = document.querySelector(
+      ".menu-item-wrapper.service-areas"
+    );
+    const contact = document.querySelector(".menu-item-wrapper.contact");
+
+    if (window.location.href.indexOf("services") > -1) {
+      services.classList.add("mil-current");
+      serviceAreas.classList.remove("mil-current");
+      contact.classList.remove("mil-current");
+    } else if (window.location.href.indexOf("service-areas") > -1) {
+      serviceAreas.classList.add("mil-current");
+      services.classList.remove("mil-current");
+      contact.classList.remove("mil-current");
+    } else if (window.location.href.indexOf("contact") > -1) {
+      contact.classList.add("mil-current");
+      serviceAreas.classList.remove("mil-current");
+      services.classList.remove("mil-current");
+    } else {
+      contact.classList.remove("mil-current");
+      serviceAreas.classList.remove("mil-current");
+      services.classList.remove("mil-current");
+    }
+
+    // Initialize and add Google map
+    let map;
+    const snappyMap = document.getElementById("map");
+
+    async function initMap() {
+      const k = { lat: 43.440189, lng: -80.491402 };
+      const w = { lat: 43.471325, lng: -80.526911 };
+      const g = { lat: 43.541149, lng: -80.249181 };
+      const c = { lat: 43.365841, lng: -80.313708 };
+      const center = { lat: 43.47596, lng: -80.356324 };
+
+      const { Map } = await google.maps.importLibrary("maps");
+      const { AdvancedMarkerElement } = await google.maps.importLibrary(
+        "marker"
+      );
+
+      // The map, centered at Kitchener
+      map = new Map(snappyMap, {
+        zoom: 10,
+        center: center,
+        mapId: "snappy",
+        disableDefaultUI: true,
+      });
+
+      // The markers
+      const kmarker = new AdvancedMarkerElement({
+        map: map,
+        position: k,
+        title: "Kitchener",
+      });
+      const wmarker = new AdvancedMarkerElement({
+        map: map,
+        position: w,
+        title: "Waterloo",
+      });
+      const gmarker = new AdvancedMarkerElement({
+        map: map,
+        position: g,
+        title: "Guelph",
+      });
+      const cmarker = new AdvancedMarkerElement({
+        map: map,
+        position: c,
+        title: "Cambridge",
+      });
+    }
+
+    snappyMap && initMap();
+
+    let popupClicked = false;
+
+    const initPopup = () => {
+      const callPopupButtons = document.querySelectorAll(".mil-call-popup");
+      const closePopupButton = document.querySelector(".mil-close-popup");
+      const discountPopup = document.querySelector(".mil-discount-popup");
+  
+      if (callPopupButtons && discountPopup) {
+        callPopupButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            discountPopup.classList.add("mil-active");
+            popupClicked = true;
+            console.log("clicked");
+          });
+        });
+      }
+  
+      if (closePopupButton && discountPopup) {
+        closePopupButton.addEventListener("click", function () {
+          discountPopup.classList.remove("mil-active");
+        });
+      }
+    };
+  
+    initPopup();
+
     initAccordion();
     initSliders();
     initScrollAnimations();

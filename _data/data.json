@@ -1,8 +1,10 @@
 {
-  "description": "Snappy Clean is a professional cleaning company that offers a wide range of cleaning services for your home or office. We offer a variety of cleaning services including residential cleaning, commercial cleaning, move-in/move-out cleaning, and more. Contact us today to learn more about our services and to get a free quote.",
+  "description": "Snappy Clean is a professional cleaning company that offers a wide range of cleaning services for your home or office.",
   "numOfReviews": 117,
   "quoteText": "Get A Quote",
   "phone": "(548) 490-3096",
   "phoneNoSpaces": "+15484903096",
-  "email": "info@snappyclean.ca"
+  "email": "info@snappyclean.ca",
+  "facebook": "https://www.facebook.com/people/Snappy-Clean/61571970613479/",
+  "instagram": "https://www.instagram.com/snappycleancanada/"
 }
