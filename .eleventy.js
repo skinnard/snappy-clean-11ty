@@ -19,6 +19,7 @@ module.exports = function(eleventyConfig) {
    */
   eleventyConfig.addPassthroughCopy('src/img')
   eleventyConfig.addPassthroughCopy('vendor')
+  eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
 
   /**
    * HTML Minifier for production builds
