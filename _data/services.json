@@ -22,14 +22,14 @@
     ]
   },
   {
-    "name": "Monthly Premium Clean",
-    "link": "services/monthly-premium-clean",
-    "description": "Our monthly premium cleaning provides a thorough, top-to-bottom refresh, tackling dust, grime, and buildup in every corner. Enjoy a consistently pristine home without the effort—just relax and let us handle the deep cleaning!",
+    "name": "Post Construction Clean",
+    "link": "services/post-construction-clean",
+    "description": "Our post construction cleaning service is perfect for homeowners and businesses who have recently completed a renovation or new construction project. We'll clean up the dust and debris so you can enjoy your new space.",
     "points": [
+      "Cleaning up after construction",
       "Like our standard clean, but more thorough",
-      "Cleaning behind and under furniture",
-      "Wiping down baseboards",
-      "Focus on high-touch areas"
+      "Preparing for move-in",
+      "A through and deep clean"
     ]
   },
   {

@@ -3,17 +3,12 @@
     <div
         class="container">
         <div class="mb-40">
-            <p class="mb-10 mil-fs-24 text-[#474747]">Ideal for homes that haven't been cleaned in a while or for a detailed seasonal refresh, our Deep Cleaning Package is
-                the most thorough service we offer. The key difference is the extra time and attention we dedicate to often-overlooked
-                areas, especially vertical surfaces.</p>
-            <p class="mb-10 mil-fs-24 text-[#474747]">This includes cobweb removal, cleaning and polishing light fixtures, wiping down window sills and tracks, scrubbing
-                baseboards, and cleaning the exterior of cabinets and drawers. We also focus on wiping down doors, handles, and light
-                switches, as well as detailed cleaning behind and under furniture.</p>
-            <p class="mb-10 mil-fs-24 text-[#474747]">Our Deep Clean ensures a comprehensive, spotless home with attention to all those hard-to-reach areas.</p>
+            <p class="mb-10 mil-fs-24 text-[#474747]">Our post-construction cleaning service is designed to transform newly built or renovated spaces into spotless, move-in-ready environments. Construction projects often leave behind dust, debris, and residues that require specialized cleaning techniques. Our professional team thoroughly removes dust from surfaces, cleans windows, scrubs floors, and ensures every corner is free from leftover materials. We use high-quality, industrial-grade cleaning equipment and eco-friendly products to provide a deep clean that enhances the safety and appearance of your space. Whether it&rsquo;s a residential property, office building, or commercial space, we tailor our services to meet your specific needs.</p>
+            <p class="mb-10 mil-fs-24 text-[#474747]">By choosing our post-construction cleaning service, you save time and effort while ensuring a pristine and healthy environment. Our detailed approach not only improves air quality by eliminating dust and allergens but also enhances the overall aesthetic appeal of your property. A professionally cleaned space is essential for making a great first impression, whether you&rsquo;re a homeowner eager to settle in or a business preparing for operations. Let us handle the hard work so you can enjoy the results of your construction project without the hassle of post-build cleanup.</p>
         </div>
         <div class="row mil-mb-60">
             <div class="col-lg-6">
-                {% for item in monthlyPremiumCleanFaq %}
+                {% for item in postConstructionCleanFaq %}
                     {% if (loop.index <= 3) %}
                         <div class="mil-mb-15 mil-up">
                             <button class="mil-accordion mil-fw-600 mil-fs-20">{{ item.title }}<span class="mil-icon mil-sm mil-bg-m-3">+</span>
@@ -26,7 +21,7 @@
                 {% endfor %}
             </div>
             <div class="col-lg-6">
-                {% for item in monthlyPremiumCleanFaq %}
+                {% for item in postConstructionCleanFaq %}
                     {% if (loop.index >= 4) %}
                         <div class="mil-mb-15 mil-up">
                             <button class="mil-accordion mil-fw-600 mil-fs-20">{{ item.title }}<span class="mil-icon mil-sm mil-bg-m-3">+</span>
