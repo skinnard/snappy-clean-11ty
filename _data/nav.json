@@ -1,0 +1,51 @@
+{
+    "user": {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com",
+      "address": {
+        "street": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "zip": "12345"
+      },
+      "phoneNumbers": [
+        {
+          "type": "home",
+          "number": "555-555-5555"
+        },
+        {
+          "type": "work",
+          "number": "555-555-5556"
+        }
+      ]
+    },
+    "order": {
+      "orderId": 12345,
+      "date": "2025-02-11",
+      "items": [
+        {
+          "itemId": "A123",
+          "name": "Widget",
+          "price": 19.99,
+          "quantity": 2
+        },
+        {
+          "itemId": "B456",
+          "name": "Gadget",
+          "price": 29.99,
+          "quantity": 1
+        }
+      ],
+      "shipping": {
+        "method": "UPS",
+        "cost": 9.99
+      }
+    },
+    "payment": {
+      "method": "credit_card",
+      "transactionId": "abc123",
+      "amount": 59.97,
+      "currency": "USD"
+    }
+  }

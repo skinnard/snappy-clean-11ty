@@ -1,0 +1,30 @@
+[
+    {
+      "title": "Hamilton",
+      "link": "/service-areas/hamilton"
+    },
+    {
+      "title": "Burlington",
+      "link": "/service-areas/burlington"
+    },
+    {
+      "title": "Ancaster",
+      "link": "/service-areas/ancaster"
+    },
+    {
+      "title": "Dundas",
+      "link": "/service-areas/dundas"
+    },
+    {
+      "title": "Waterdown",
+      "link": "/service-areas/waterdown"
+    },
+    {
+      "title": "Stoney Creek",
+      "link": "/service-areas/stoney-creek"
+    },
+    {
+      "title": "Flamborough",
+      "link": "/service-areas/flamborough"
+    } 
+  ]
