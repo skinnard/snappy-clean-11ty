@@ -11,16 +11,17 @@
                             <li class="mil-has-children menu-item-wrapper services">
                                 <a class="menu-title menu-link mil-has-children" href="/services">Services</a>
                                 <ul>
-                                    <li><a class="menu-link menu-link-child" href="/services/deep-clean">Deep Cleaning (1st Clean)</a></li>
-                                    <li><a class="menu-link menu-link-child" href="/services/standard-cleaning">Standard Cleaning</a></li>
-                                    <li><a class="menu-link menu-link-child" href="/services/post-construction-clean">Post Construction Clean</a></li>
-                                    <li><a class="menu-link menu-link-child" href="/services/move-in-out-cleaning">Move In/Out Cleaning</a></li>
+                                    {% for item in nav.services.services %}
+                                        <li>
+                                            <a class="menu-link menu-link-child" href="{{ item.link }}">{{ item.title }}</a>
+                                        </li>
+                                    {% endfor %}
                                 </ul>
                             </li>
                             <li class="mil-has-children menu-item-wrapper service-areas">
                                 <span class="menu-title menu-link mil-has-children">Service Ares</span>
                                 <ul>
-                                    {% for item in navLocations %}
+                                    {% for item in nav.locations.locations %}
                                         <li>
                                             <a class="menu-link menu-link-child" href="{{ item.link }}">{{ item.title }}</a>
                                         </li>
@@ -28,7 +29,7 @@
                                 </ul>
                             </li>
                             <li class="menu-item-wrapper contact">
-                                <a class="menu-link" class="menu-title menu-link" href="/contact">Contact</a>
+                                <a class="menu-link" class="menu-title menu-link" href="{{ nav.contact.link }}">{{ nav.contact.title }}</a>
                             </li>
                         </ul>
                     </nav>
