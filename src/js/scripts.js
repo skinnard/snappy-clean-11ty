@@ -663,8 +663,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   snappyMap && initMap();
 
-  console.log("window.location.href: ", window.location.href);
-
   // current year in footer
   document.getElementById("year").innerHTML = new Date().getFullYear();
 
@@ -752,53 +750,72 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Initialize and add Google map
-    let map;
-    const snappyMap = document.getElementById("map");
+  let map;
+  const snappyMap = document.getElementById("map");
 
-    async function initMap() {
-      const k = { lat: 43.440189, lng: -80.491402 };
-      const w = { lat: 43.471325, lng: -80.526911 };
-      const g = { lat: 43.541149, lng: -80.249181 };
-      const c = { lat: 43.365841, lng: -80.313708 };
-      const center = { lat: 43.47596, lng: -80.356324 };
+  async function initMap() {
+    const h = { lat: 43.2606921, lng: -80.0979543 };
+    const b = { lat: 43.373348, lng: -79.791710 };
+    const a = { lat: 43.214981, lng: -79.988360 };
+    const d = { lat: 43.268382, lng: -79.959547 };
+    const s = { lat: 43.229421, lng: -79.718963 };
+    const f = { lat: 43.337716, lng: -80.081821 };
+    const w = { lat: 43.333385, lng: -79.901624 };
+    const center = { lat: 43.299508, lng: -79.871300 };
 
-      const { Map } = await google.maps.importLibrary("maps");
-      const { AdvancedMarkerElement } = await google.maps.importLibrary(
-        "marker"
-      );
+    const { Map } = await google.maps.importLibrary("maps");
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-      // The map, centered at Kitchener
-      map = new Map(snappyMap, {
-        zoom: 10,
-        center: center,
-        mapId: "snappy",
-        disableDefaultUI: true,
-      });
+    // The map, centered at Hamilton
+    map = new Map(snappyMap, {
+      zoom: 11,
+      center: center,
+      mapId: "snappy",
+      disableDefaultUI: true,
+    });
 
-      // The markers
-      const kmarker = new AdvancedMarkerElement({
-        map: map,
-        position: k,
-        title: "Kitchener",
-      });
-      const wmarker = new AdvancedMarkerElement({
-        map: map,
-        position: w,
-        title: "Waterloo",
-      });
-      const gmarker = new AdvancedMarkerElement({
-        map: map,
-        position: g,
-        title: "Guelph",
-      });
-      const cmarker = new AdvancedMarkerElement({
-        map: map,
-        position: c,
-        title: "Cambridge",
-      });
-    }
+    // The markers
+    const hmarker = new AdvancedMarkerElement({
+      map: map,
+      position: h,
+      title: "Hamilton",
+    });
+    const bmarker = new AdvancedMarkerElement({
+      map: map,
+      position: b,
+      title: "Burlington",
+    });
+    const amarker = new AdvancedMarkerElement({
+      map: map,
+      position: a,
+      title: "Ancaster",
+    });
+    const dmarker = new AdvancedMarkerElement({
+      map: map,
+      position: d,
+      title: "Dundas",
+    });
+    const smarker = new AdvancedMarkerElement({
+      map: map,
+      position: s,
+      title: "Stoney Creek",
+    });
+    const fmarker = new AdvancedMarkerElement({
+      map: map,
+      position: f,
+      title: "Flamborough",
+    });
+    const wmarker = new AdvancedMarkerElement({
+      map: map,
+      position: w,
+      title: "Waterdown",
+    });
+  }
 
-    snappyMap && initMap();
+  snappyMap && initMap();
+
+  // current year in footer
+  document.getElementById("year").innerHTML = new Date().getFullYear();
 
     let popupClicked = false;
 
